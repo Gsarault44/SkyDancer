@@ -19,10 +19,10 @@ export default function Yoga() {
           </p>          
           <Image
             className="logo"
-            src="/next.svg"
+            src="/yoga-logo.png"
             alt="Next.js Logo"
-            width={180}
-            height={37}
+            width={250}
+            height={100}
             priority
           />
       </main>

@@ -10,7 +10,7 @@ const inter = Nanum_Gothic({ weight: "400", subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  console.log(router);
+
   return (
     <>
       <style jsx global>{`

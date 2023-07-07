@@ -174,7 +174,7 @@ export default function Dance() {
         <div className="dance-split-media-content">
           <div className="inner">
             <div className="split-content" ref={(el: never) => (textRefs.current[0] = el)}>
-              <p>Skydancer Entertainment is a preeminent dance casting agency based in the Washington DC area.  We cast dancers of all genres for every type of event in every part of the United States.</p>
+              <p>Skydancer Entertainment is your preeminent dance casting agency for any event.  We are based in Washington DC but cast dancers on any event worldwide.  Welcome to your world of dance!</p>
               <button className="button">Get in Touch</button>
             </div>
             <div className="split-media">

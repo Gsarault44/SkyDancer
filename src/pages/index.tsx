@@ -15,6 +15,15 @@ export default function Home() {
         <div className="splash-row">
           <Link href='/fitness' className='home__link'>
             <h1>Fitness</h1>
+            <div className="inline-logo">
+              <Image
+                src="/skydancer-fitness.png"
+                alt="Skydance Fitness"
+                width={250}
+                height={125}
+                priority
+              />
+            </div>
             <Image
               src="/fitness-back-cropped.jpg"
               alt="Fitness"
@@ -32,7 +41,7 @@ export default function Home() {
                 src="/logo.png"
                 alt="Skydance Entertainment"
                 width={250}
-                height={100}
+                height={125}
                 priority
               />
             </div>
@@ -53,12 +62,12 @@ export default function Home() {
                 src="/yoga-logo.png"
                 alt="Skydance Entertainment"
                 width={250}
-                height={100}
+                height={125}
                 priority
               />
             </div>
             <Image
-              src="/yoga-dancer-pose.jpg"
+              src="/candles.png"
               alt="Yoga"
               width={0}
               height={0}
