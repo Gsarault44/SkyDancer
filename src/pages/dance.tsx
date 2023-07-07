@@ -91,7 +91,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
               priority
             />
             <Image
@@ -100,7 +100,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
               priority
             />
             <Image
@@ -109,7 +109,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
               priority
             />
             <Image
@@ -118,7 +118,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
               priority
             />
             <Image
@@ -127,10 +127,10 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
               priority
             />
-            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'cover' }}>
+            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'contain' }}>
               <source src="/band-choreo.mp4" />
             </video>
             <Image
@@ -139,7 +139,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
               priority
             />
             <Image
@@ -148,7 +148,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
               priority
             />
             <Image
@@ -157,7 +157,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
               priority
             />
             <Image
@@ -166,7 +166,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
               priority
             />
           </Carousel>
