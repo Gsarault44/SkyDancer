@@ -1,12 +1,13 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import '@styles/app.scss';
-import { Nanum_Gothic } from 'next/font/google'
+import { Nanum_Gothic, Poppins } from 'next/font/google'
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const inter = Nanum_Gothic({ weight: "400", subsets: ['latin'] })
+const pop = Poppins({ weight: "200", subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -14,8 +15,11 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <style jsx global>{`
-        html * {
+        html main * {
           font-family: ${inter.style.fontFamily};
+        }
+        html body * {
+          font-family: ${pop.style.fontFamily};
         }
       `}</style>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
@@ -25,10 +29,10 @@ export default function App({ Component, pageProps }: AppProps) {
               <Link href="/fitness">
                 Fitness
               </Link>
-              <Link href="/dance">
+              <Link href="https://sky-dancer.vercel.app/">
                 Dance
               </Link>
-              <Link href="/yoga">
+              <Link href="https://sky-dancer-yoga.vercel.app/">
                 Yoga
               </Link>
             </nav>
