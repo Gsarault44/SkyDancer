@@ -55,7 +55,7 @@ export default function Home() {
               priority
             />
           </Link>
-          <Link href='/yoga' className='home__link'>
+          <Link href='https://sky-dancer-yoga.vercel.app/' className='home__link'>
             <h1>Yoga</h1>
             <div className="inline-logo">
               <Image
