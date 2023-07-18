@@ -67,11 +67,11 @@ export default function Home() {
               />
             </div>
             <Image
-              src="/candles.png"
+              src="/dancer.png"
               alt="Yoga"
               width={0}
               height={0}
-              sizes='100vw'
+              sizes='100vh'
               style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
               priority
             />
