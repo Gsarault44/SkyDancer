@@ -38,7 +38,7 @@
 
   h1 {
     position: absolute;
-    top: 75%;
+    bottom: 25%;
     width: 100%;
     color: #fff;
     font-size: 54px;
@@ -68,7 +68,11 @@
 
   .inner {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
+    @media all and (min-width: 575px) { 
+      flex-direction: row;
+    }
     * {
       flex: 1 1 50%;
     }
