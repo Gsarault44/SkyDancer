@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <main className="home">
         <div className="splash-row">
-          <Link href='/fitness' className='home__link'>
+          <Link href='https://sky-dancer-fitness.vercel.app/' className='home__link'>
             <h1>Fitness</h1>
             <div className="inline-logo">
               <Image
