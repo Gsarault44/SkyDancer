@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
       {router.pathname != '/' && <div>
             
             <nav>
-              <Link href="/fitness">
+              <Link href="https://sky-dancer-fitness.vercel.app/">
                 Fitness
               </Link>
               <Link href="https://sky-dancer.vercel.app/">
