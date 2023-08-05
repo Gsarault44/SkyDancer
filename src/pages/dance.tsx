@@ -10,6 +10,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Dance() {
   const [showWeddingModal, setShowWeddingModal] = useState(false);
+  const [showWeddingModal2, setShowWeddingModal2] = useState(false);
 
   const imageRefs = useRef([]);
   const textRefs = useRef([]);
@@ -91,7 +92,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
+              style={{ width: '100vw', height: '100vh' }}
               priority
             />
             <Image
@@ -100,7 +101,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
+              style={{ width: '100vw', height: '100vh' }}
               priority
             />
             <Image
@@ -109,7 +110,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
+              style={{ width: '100vw', height: '100vh' }}
               priority
             />
             <Image
@@ -118,19 +119,19 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
+              style={{ width: '100vw', height: '100vh' }}
               priority
             />
             <Image
-              src="/bubbles.png"
+              src="/bubbles.jpeg"
               alt="Fitness"
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
+              style={{ width: '100vw', height: '100vh' }}
               priority
             />
-            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'contain' }}>
+            <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
               <source src="/band-choreo.mp4" />
             </video>
             <Image
@@ -139,7 +140,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
+              style={{ width: '100vw', height: '100vh' }}
               priority
             />
             <Image
@@ -148,7 +149,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
+              style={{ width: '100vw', height: '100vh' }}
               priority
             />
             <Image
@@ -157,7 +158,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
+              style={{ width: '100vw', height: '100vh' }}
               priority
             />
             <Image
@@ -166,7 +167,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'contain' }}
+              style={{ width: '100vw', height: '100vh' }}
               priority
             />
           </Carousel>
@@ -224,6 +225,13 @@ export default function Dance() {
             </blockquote>
           </div>
         </>}
+        {showWeddingModal2 && <>
+          <div className='catcher' onClick={() => setShowWeddingModal2(!showWeddingModal2)}></div>
+          <div className="modal">
+            <span className="close" onClick={() => setShowWeddingModal2(!showWeddingModal2)}>X</span>
+            <iframe src="https://drive.google.com/file/d/1KZTEQh74gLixnLUztHSHm_tUYs0xAoPD/preview" width="100%" height="100%"></iframe>
+          </div>
+        </>}
         <div className="what-we-do">
           <div className="inner">
             <div className="what-we-do-content">
@@ -233,7 +241,8 @@ export default function Dance() {
               </video>
               <ul>
                 <li><p><strong>Choreograph and Teach:</strong> first dances for wedding couples.</p>
-                <span className="clickable" onClick={() => setShowWeddingModal(!showWeddingModal)}>View Sample</span></li>
+                <span className="clickable" onClick={() => setShowWeddingModal(!showWeddingModal)}>View Sample</span>
+                <span className="clickable" onClick={() => setShowWeddingModal2(!showWeddingModal2)}>View More</span></li>
                 <li><p><strong>Corporate and other Events:</strong>  Choreograph and perform productions for corporate events.</p></li>
                 <li><p><strong>Flash mobs:</strong>  Choreograph and perform flash mobs for any event.</p></li>
                 <li><p><strong>Instruct and Perform:</strong>  Choreograph, instruct and perform salsa, ballroom, hip hop, broadway jazz, etc.</p></li>

@@ -27,7 +27,8 @@
   background-image: fixed;
   &:after {
     content: '';
-    background-color: #000;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -50,6 +51,8 @@
 
   video, img {
     display: block;
+    object-fit: cover;
+    object-position: top;
   }
 }
 
@@ -192,8 +195,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 60vw;
-    height: 600px;
+    max-width: 90vw;
+    max-height: 90vh;
   }
 
   .close {
@@ -211,7 +214,9 @@
     margin: 0 auto;
     margin-bottom: 1em;
   }
-
+  iframe {
+    border: 0;
+  }
 }
 
 .clickable {
