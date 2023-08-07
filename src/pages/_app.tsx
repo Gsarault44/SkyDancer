@@ -1,3 +1,4 @@
+import * as React from 'react';
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import '@styles/app.scss';
@@ -11,7 +12,7 @@ const pop = Poppins({ weight: "200", subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
-
+  const [menuStatus, setMenuStatus] = React.useState(false);
   return (
     <>
       <style jsx global>{`
@@ -24,8 +25,25 @@ export default function App({ Component, pageProps }: AppProps) {
       `}</style>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
       {router.pathname != '/' && <div>
-            
-            <nav>
+          <div className="menu-button">
+            <Link href="/" className="logo">
+              <Image
+                src="/logo.png"
+                alt="Skydance Entertainment"
+                width={125}
+                height={50}
+                priority
+              />
+            </Link>
+            <Image
+              src={`${menuStatus ? '/close.svg' : '/menu-svgrepo-com.svg'}`}
+              alt='menu Icon'
+              onClick={() => setMenuStatus(!menuStatus)}
+              width={30}
+              height={30}
+            />
+          </div>
+          <nav className={`${menuStatus ? 'nav-open' : 'nav-closed'}`}>
               <Link href="https://sky-dancer-fitness.vercel.app/">
                 Fitness
               </Link>

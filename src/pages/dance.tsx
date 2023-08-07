@@ -192,6 +192,11 @@ export default function Dance() {
             </div>
           </div>
         </div>
+        <div className="da-video">
+          <video autoPlay muted loop>
+              <source src="/trimmed1.mov" />
+          </video>
+        </div>
         <div className="dance-split-media-content">
           <div className="inner">
             <div className="split-media">
@@ -229,7 +234,9 @@ export default function Dance() {
           <div className='catcher' onClick={() => setShowWeddingModal2(!showWeddingModal2)}></div>
           <div className="modal">
             <span className="close" onClick={() => setShowWeddingModal2(!showWeddingModal2)}>X</span>
-            <iframe src="https://drive.google.com/file/d/1KZTEQh74gLixnLUztHSHm_tUYs0xAoPD/preview" width="100%" height="100%"></iframe>
+            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'cover' }}>
+                <source src="/wedding-video.mp4" />
+            </video>
           </div>
         </>}
         <div className="what-we-do">
