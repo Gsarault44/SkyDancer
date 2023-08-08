@@ -24,11 +24,10 @@
 
 .dance-hero {
   position: relative;
-  background-image: fixed;
   &:after {
     content: '';
     background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(0deg, rgba(2,0,36,0.2) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 50%);
     position: absolute;
     top: 0;
     left: 0;
@@ -39,7 +38,7 @@
 
   h1 {
     position: absolute;
-    bottom: 25%;
+    bottom: 22%;
     width: 100%;
     color: #fff;
     font-size: 54px;

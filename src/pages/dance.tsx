@@ -108,7 +108,7 @@ export default function Dance() {
               style={{ width: '100vw', height: '100vh' }}
               priority
             />
-            <Image
+            {/* <Image
               src="/ballet.png"
               alt="Fitness"
               width={0}
@@ -116,7 +116,7 @@ export default function Dance() {
               sizes='100vw'
               style={{ width: '100vw', height: '100vh' }}
               priority
-            />
+            /> */}
             <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
               <source src="/gatsby-snippet.mov" />
             </video>
