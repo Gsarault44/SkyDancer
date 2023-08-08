@@ -67,8 +67,15 @@
   video {
     object-fit: cover;
     object-position: center;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
     @media all and (min-width: 575px) { 
       top: 0;
       left: 0;
@@ -80,6 +87,7 @@
 
 .dance-split-media-content {
   padding: 3rem 0;
+  background-color: #094c79;
   
   &:nth-of-type(2) {
     background-color: #fff;
@@ -100,6 +108,7 @@
     }
     * {
       flex: 1 1 50%;
+      color: #fff;
     }
 
     .split-content {
@@ -125,6 +134,7 @@
     p {
       font-size: 24px;
       margin-bottom: 2rem;
+      color: #fff;
       @media all and (min-width: 575px) {
         max-width: 75%;
       }
@@ -145,9 +155,13 @@
 
 .what-we-do {
   padding: 3rem 0;
+  background-color: #094c79;
 
   &-content {
     margin-bottom: 3rem;
+    > * {
+      color: #fff;
+    }
   }
 
   p {

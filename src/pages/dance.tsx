@@ -193,8 +193,8 @@ export default function Dance() {
           </div>
         </div>
         <div className="da-video">
-          <video autoPlay muted loop>
-              <source src="/trimmed1.mov" />
+          <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'cover' }}>
+              <source src="/trimmed.mp4" />
           </video>
         </div>
         <div className="dance-split-media-content">
