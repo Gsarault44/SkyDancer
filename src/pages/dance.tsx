@@ -82,7 +82,8 @@ export default function Dance() {
             responsive={responsive}
             containerClass="carousel"
             autoPlay={true}
-            transitionDuration={1000}
+            autoPlaySpeed={5000}
+            transitionDuration={1500}
             arrows={false}
             infinite={true}
           >
@@ -95,6 +96,9 @@ export default function Dance() {
               style={{ width: '100vw', height: '100vh' }}
               priority
             />
+            <video autoPlay muted loop style={{ width: '100vw', height: '100vh', objectPosition: 'center' }}>
+              <source src="/breakdance-trim.mov" />
+            </video>
             <Image
               src="/ballet-yellow.png"
               alt="Fitness"
@@ -113,6 +117,9 @@ export default function Dance() {
               style={{ width: '100vw', height: '100vh' }}
               priority
             />
+            <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
+              <source src="/gatsby-snippet.mov" />
+            </video>
             <Image
               src="/bar-mitzvah.png"
               alt="Fitness"
@@ -122,6 +129,9 @@ export default function Dance() {
               style={{ width: '100vw', height: '100vh' }}
               priority
             />
+            <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
+              <source src="/gatsby-snippet-2.mov" />
+            </video>
             <Image
               src="/bubbles.jpeg"
               alt="Fitness"
@@ -170,6 +180,9 @@ export default function Dance() {
               style={{ width: '100vw', height: '100vh' }}
               priority
             />
+            <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
+              <source src="/hustle-snippet.mov" />
+            </video>
           </Carousel>
         </div>
         <div className="dance-split-media-content">
