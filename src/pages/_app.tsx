@@ -60,7 +60,7 @@ export default function App({ Component, pageProps }: AppProps) {
                   src="/logo.png"
                   alt="Skydance Entertainment"
                   width={250}
-                  height={100}
+                  height={90}
                   priority
                 />
               </Link>

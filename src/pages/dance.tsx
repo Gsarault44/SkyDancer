@@ -190,7 +190,7 @@ export default function Dance() {
             <div className="split-content" ref={(el: never) => (textRefs.current[0] = el)}>
               <h2>Skydancer Entertainment</h2>
               <p>Your preeminent dance casting agency for any event.  We are based in Washington DC but cast dancers on any event worldwide.  Welcome to your world of dance!</p>
-              <button className="button">Get in Touch</button>
+              <a href="mailto:wendy@skydancerentertainment.com?subject=I'm Looking To Hire Skydancer Entertainment" className="button" >Get in Touch</a>
             </div>
             <div className="split-media">
               <Image
@@ -235,7 +235,7 @@ export default function Dance() {
           <div className='catcher' onClick={() => setShowWeddingModal(!showWeddingModal)}></div>
           <div className="modal">
             <span className="close" onClick={() => setShowWeddingModal(!showWeddingModal)}>X</span>
-            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'cover' }}>
+            <video autoPlay muted loop>
                 <source src="/AudraWedding.mov" />
             </video>
             <blockquote>
@@ -248,7 +248,7 @@ export default function Dance() {
           <div className='catcher' onClick={() => setShowWeddingModal2(!showWeddingModal2)}></div>
           <div className="modal">
             <span className="close" onClick={() => setShowWeddingModal2(!showWeddingModal2)}>X</span>
-            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'cover' }}>
+            <video autoPlay muted loop>
                 <source src="/wedding-video.mp4" />
             </video>
           </div>
