@@ -15,14 +15,21 @@ button.button {
   }
 }
 
-.head-logo {
+.header nav .head-logo {
   position: absolute;
   top: 5px;
-  right: 5px;
+  left: 0;
   z-index: 999;
   display: none;
   @media all and (min-width: 575px) {
     display: block;
+  }
+
+  a {
+    display: block;
+    &:hover {
+      border-bottom: 0;
+    }
   }
 
   img {

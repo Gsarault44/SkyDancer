@@ -88,8 +88,26 @@ export default function Dance() {
             infinite={true}
           >
             <Image
-              src="/dance.png"
+              src="/crowd.png"
               alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100vw', height: '100vh' }}
+              priority
+            />
+            <Image
+              src="/dance.png"
+              alt="Dance"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100vw', height: '100vh' }}
+              priority
+            />
+            <Image
+              src="/ballet-yellow.png"
+              alt="Ballet"
               width={0}
               height={0}
               sizes='100vw'
@@ -99,25 +117,55 @@ export default function Dance() {
             <video autoPlay muted loop style={{ width: '100vw', height: '100vh', objectPosition: 'center' }}>
               <source src="/breakdance-trim.mov" />
             </video>
+            <video autoPlay muted loop style={{ width: '100vw', height: '100vh', objectPosition: 'center' }}>
+              <source src="/promo-white.mp4" />
+            </video>
             <Image
-              src="/ballet-yellow.png"
-              alt="Fitness"
+              src="/shadow.png"
+              alt="Ballet"
               width={0}
               height={0}
               sizes='100vw'
               style={{ width: '100vw', height: '100vh' }}
               priority
             />
-            {/* <Image
-              src="/ballet.png"
-              alt="Fitness"
+            <Image
+              src="/leg-up.jpg"
+              alt="Ballet"
               width={0}
               height={0}
               sizes='100vw'
               style={{ width: '100vw', height: '100vh' }}
               priority
-            /> */}
-            <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
+            />
+            <Image
+              src="/ballet.png"
+              alt="Ballet"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100vw', height: '100vh' }}
+              priority
+            />
+            <Image
+              src="/follow-the-leader.png"
+              alt="Ballet"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100vw', height: '100vh' }}
+              priority
+            />
+            <Image
+              src="/stretch.png"
+              alt="Ballet"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100vw', height: '100vh' }}
+              priority
+            />
+            {/* <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
               <source src="/gatsby-snippet.mov" />
             </video>
             <Image
@@ -179,10 +227,7 @@ export default function Dance() {
               sizes='100vw'
               style={{ width: '100vw', height: '100vh' }}
               priority
-            />
-            <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
-              <source src="/hustle-snippet.mov" />
-            </video>
+            /> */}
           </Carousel>
         </div>
         <div className="dance-split-media-content">
@@ -195,7 +240,7 @@ export default function Dance() {
             <div className="split-media">
               <Image
                 ref={(el: never) => (imageRefs.current[0] = el)}
-                src="/ballet2.png"
+                src="/white-outfits.jpg"
                 alt="Fitness"
                 width={0}
                 height={0}

@@ -44,16 +44,6 @@ export default function App({ Component, pageProps }: AppProps) {
             />
           </div>
           <nav className={`${menuStatus ? 'nav-open' : 'nav-closed'}`}>
-              <Link href="https://sky-dancer-fitness.vercel.app/">
-                Fitness
-              </Link>
-              <Link href="https://sky-dancer.vercel.app/">
-                Dance
-              </Link>
-              <Link href="https://sky-dancer-yoga.vercel.app/">
-                Yoga
-              </Link>
-            </nav>
             <div className="head-logo">
               <Link href="/">
                 <Image
@@ -65,6 +55,16 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
               </Link>
             </div>
+              <Link href="https://sky-dancer-fitness.vercel.app/">
+                Fitness
+              </Link>
+              <Link href="https://sky-dancer.vercel.app/">
+                Dance
+              </Link>
+              <Link href="https://sky-dancer-yoga.vercel.app/">
+                Yoga
+              </Link>
+            </nav>
           </div>}
         </header>
       <Component {...pageProps} />
