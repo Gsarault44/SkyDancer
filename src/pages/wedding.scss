@@ -1,0 +1,16 @@
+.wedding {
+  .intro {
+    background-color: #000;;
+    &__inner {
+      padding: 3rem 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      text-align: center;
+    }
+  }
+}

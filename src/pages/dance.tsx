@@ -305,14 +305,46 @@ export default function Dance() {
               <video autoPlay muted loop style={{ width: '100%', height: '400px', objectFit: 'contain' }}>
                 <source src="/skydancer-promo2.mp4" />
               </video>
+              <h3>At Skydancer Entertainment, we&apos;re all about turning ordinary events into extraordinary experiences. Whether it&apos;s a special celebration, corporate gathering, Flash Mob, Ball Room, Jazz, or any occasion</h3>
               <ul>
-                <li><p><strong>Choreograph and Teach:</strong> first dances for wedding couples.</p>
-                <span className="clickable" onClick={() => setShowWeddingModal(!showWeddingModal)}>View Sample</span>
-                <span className="clickable" onClick={() => setShowWeddingModal2(!showWeddingModal2)}>View More</span></li>
-                <li><p><strong>Corporate and other Events:</strong>  Choreograph and perform productions for corporate events.</p></li>
-                <li><p><strong>Flash mobs:</strong>  Choreograph and perform flash mobs for any event.</p></li>
-                <li><p><strong>Instruct and Perform:</strong>  Choreograph, instruct and perform salsa, ballroom, hip hop, broadway jazz, etc.</p></li>
-                <li><p><strong>Bands:</strong> Choreograph and instruct bands.</p></li>
+                <li>
+                  <a href="/wedding">
+                  <Image
+                    src="/face-to-face-dance.jpg"
+                    alt="wedding"
+                    width={300}
+                    height={200}
+                    priority
+                  />
+                  <p><strong>Wedding first dance</strong></p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/corporate">
+                    <Image
+                      src="/Basheer-big-jump.jpg"
+                      alt="Corporate Events"
+                      width={300}
+                      height={200}
+                      priority
+                    />
+                    <p><strong>Corporate and other Events</strong></p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/band">
+                    <Image
+                      src="/band-dance.png"
+                      alt="Corporate Events"
+                      width={300}
+                      height={200}
+                      priority
+                    />
+                    <p><strong>Choreograph and instruct bands.</strong></p>
+                  </a>
+                </li>
+                {/* <li><p><strong>Flash mobs:</strong>  Choreograph and perform flash mobs for any event.</p></li>
+                <li><p><strong>Instruct and Perform:</strong>  Choreograph, instruct and perform salsa, ballroom, hip hop, broadway jazz, etc.</p></li> */}
               </ul>
             </div>
             <div className="what-we-do-content">
