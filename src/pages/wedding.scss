@@ -1,6 +1,11 @@
 .wedding {
+  background-color: #000;
+  .dance-hero h1 {
+    padding: 0 20px;
+  }
   .intro {
-    background-color: #000;;
+
+
     &__inner {
       padding: 3rem 0;
       width: 90%;
@@ -11,6 +16,26 @@
       max-width: 700px;
       margin: 0 auto 3rem;
       text-align: center;
+    }
+
+    &-image {
+      margin-bottom: 2rem;  
+    }
+  }
+
+  &-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    > * {
+      flex: 1 1 100%;
+      @media all and (min-width: 575px) {
+        flex: 1 1 45%;
+      }
+      @media all and (min-width: 768px) {
+        flex: 1 1 20%;
+      }
     }
   }
 }

@@ -308,7 +308,7 @@ export default function Dance() {
               <h3>At Skydancer Entertainment, we&apos;re all about turning ordinary events into extraordinary experiences. Whether it&apos;s a special celebration, corporate gathering, Flash Mob, Ball Room, Jazz, or any occasion</h3>
               <ul>
                 <li>
-                  <a href="/wedding">
+                  <Link href="/wedding">
                   <Image
                     src="/face-to-face-dance.jpg"
                     alt="wedding"
@@ -317,10 +317,10 @@ export default function Dance() {
                     priority
                   />
                   <p><strong>Wedding first dance</strong></p>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/corporate">
+                  <Link href="/corporate">
                     <Image
                       src="/Basheer-big-jump.jpg"
                       alt="Corporate Events"
@@ -329,10 +329,10 @@ export default function Dance() {
                       priority
                     />
                     <p><strong>Corporate and other Events</strong></p>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/band">
+                  <Link href="/band">
                     <Image
                       src="/band-dance.png"
                       alt="Corporate Events"
@@ -341,7 +341,7 @@ export default function Dance() {
                       priority
                     />
                     <p><strong>Choreograph and instruct bands.</strong></p>
-                  </a>
+                  </Link>
                 </li>
                 {/* <li><p><strong>Flash mobs:</strong>  Choreograph and perform flash mobs for any event.</p></li>
                 <li><p><strong>Instruct and Perform:</strong>  Choreograph, instruct and perform salsa, ballroom, hip hop, broadway jazz, etc.</p></li> */}
