@@ -97,13 +97,14 @@ export default function Dance() {
               <div className='band-partner'>
                 <h3><a href="https://kstreetunion.com/" target='_blank'>K Street Union</a></h3>
                 <p>K Street Union is an 8-11 piece super group of industry powerhouses who’ve come together in a line up excelling at genres from Jazz-Lounge to Retro-Pop, Indie to Rock, and Motown to Top 40 Dance Hits.</p>
-                <a href="https://www.youtube.com/watch?v=vOcFZQns0BI&t=5s"target='_blank'><img src="https://i3.ytimg.com/vi/vOcFZQns0BI/maxresdefault.jpg" alt="K Street Union" /></a>
+                <div className="band-video-links">
+                  <a href="https://www.youtube.com/watch?v=vOcFZQns0BI&t=5s"target='_blank'><img src="https://i3.ytimg.com/vi/vOcFZQns0BI/maxresdefault.jpg" alt="K Street Union" /></a>
+                </div>
               </div>
               <div className='band-partner'>
                 <h3><a href="https://dcsynergy.com/" target="_blank">DC Synergy</a></h3>
                 <p>If you are planning a party and you need continuous music that is perfect for everyone, DC Synergy may be just the perfect band.</p>
-                <h4>Check out their work</h4>
-                <div className="band-grid">
+                <div className="band-video-links">
                   <div>
                   <a href="https://youtu.be/xJHmytqKHF8" target="_blank">
                     <img src="https://i3.ytimg.com/vi/xJHmytqKHF8/maxresdefault.jpg" alt="DC Synergy " />

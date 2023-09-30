@@ -316,7 +316,10 @@ export default function Dance() {
                     height={200}
                     priority
                   />
-                  <p><strong>Wedding first dance</strong></p>
+                  <div className="card-content">
+                    <p><strong>Wedding first dance</strong></p>
+                    <span>Let us make your first dance memorable.</span>
+                  </div>
                   </Link>
                 </li>
                 <li>
@@ -328,7 +331,10 @@ export default function Dance() {
                       height={200}
                       priority
                     />
-                    <p><strong>Corporate and other Events</strong></p>
+                    <div className="card-content">
+                      <p><strong>Corporate and other Events</strong></p>
+                      <span>Bar/Bat mitzvah, Charity Galas, Ballroom and many more!</span>
+                    </div>
                   </Link>
                 </li>
                 <li>
@@ -340,44 +346,18 @@ export default function Dance() {
                       height={200}
                       priority
                     />
-                    <p><strong>Choreograph and instruct bands.</strong></p>
+                    <div className="card-content">
+                      <p><strong>Choreograph and instruct bands.</strong></p>
+                      <span>Synchronize dance with live bands to elevate the moment to an unforgettable experience.</span>
+                    </div>
                   </Link>
                 </li>
                 {/* <li><p><strong>Flash mobs:</strong>  Choreograph and perform flash mobs for any event.</p></li>
                 <li><p><strong>Instruct and Perform:</strong>  Choreograph, instruct and perform salsa, ballroom, hip hop, broadway jazz, etc.</p></li> */}
               </ul>
             </div>
-            <div className="what-we-do-content">
-              
-            </div>
           </div>
         </div>
-        {/* <div className="testimonials">
-          <h2 className="heading">Testimonials</h2>
-          <Carousel
-            responsive={responsive}
-            containerClass="carousel inner"
-            infinite
-          >
-            <div className="quote">
-              <blockquote>
-                <p>“Wendy was fantastic to work with on our wedding first dance. Not only was she creative with her choreography for a dance that really wowed our guests, but she was also extremely patient with us helping us to nail it on the day of the wedding.”</p>
-              </blockquote>
-              <cite>—Audra C.</cite>
-            </div>
-            <div className="quote">
-              <blockquote>
-                <p>“Working with Skydancer Entertainment has given me the privilege to work as a performer and motivator to help families and their guests celebrate moments they will never forget.”</p>
-              </blockquote>
-              <cite>—Jamie S.</cite>
-            </div>
-          </Carousel>
-        </div> */}
-        {/* <div className="video-break">
-          <video autoPlay muted loop style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
-            <source src="/skydancer-promo.mov" />
-          </video>
-        </div> */}
         <div className="about">
           <div className="about__inner">
             <h2 className="heading">About</h2>
@@ -393,23 +373,6 @@ export default function Dance() {
             />
           </div>
         </div>
-        {/* <div className="auditions">
-          <h2 className="heading auditions__heading">Dance with us</h2>
-          <div className="auditions__inner">
-            <div className="auditions__content">
-              <h1>We are currently casting all styles of dance! Tell us a bit about yourself and we will reach out to schedule your audition!</h1>
-            </div>
-            <form className="auditions__form" action="mailto:gsarault@gmail.com" method="get">
-              <label htmlFor="subject">Subject:</label>
-              <input type="text" name="subject" placeholder="Your Name" />
-              <label htmlFor="email">Email:</label>
-              <input type="email" name="email" placeholder="Your Email" />
-              <label htmlFor="body">Message:</label>
-              <textarea name="body" placeholder="I would love to join your dance team, lets get a chat started" />
-              <input type="submit" value="Send" />
-            </form>
-          </div>
-        </div> */}
       </main>
       <footer className="footer">
         <div className="inner">

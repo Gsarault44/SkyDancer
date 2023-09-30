@@ -20,8 +20,9 @@
 
     h3 {
       max-width: 700px;
-      margin: 0 auto 3rem;
+      margin: 0 auto 1rem;
       text-align: center;
+      font-size: 24px;
     }
 
     &-image {
@@ -31,6 +32,8 @@
 
   &-partners {
     margin-bottom: 2rem;
+    font-size: 42px;
+    text-align: center;
   }
 
   &-grid {
@@ -45,17 +48,47 @@
         flex: 1 1 50%;
       }
     }
+    img {
+      object-fit: cover;
+      object-position: top;
+    }
   }
 
   &-partner {
-    max-width: 865px;
+    max-width: 568px;
     margin: 0 auto 2rem;
     text-align: center;
+    a  {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
     h3 {
+      font-size: 28px;
       margin-bottom: 1rem;
     }
+    p {
+      margin-bottom: 2rem;
+    }
+
     img {
       width: 100%;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .band-video-links {
+      a {
+        opacity: 0.75;
+        transition: opacity 0.32s ease-in;
+      }
+      a:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
     }
   }
 }
