@@ -242,6 +242,7 @@
       text-align: left;
       background-color: rgba(255,255,255,0.2);
       padding-bottom: 2rem;
+      overflow: hidden;
 
 
       .card-content {
@@ -285,7 +286,7 @@
         width: 100%;
         max-width: 100%;
         border-radius: 8px 8px 0 0 ;
-        transition: all 0.23s ease-in-out;
+        transition: all 0.23s ease-out;
         transform: scale(1);
         object-fit: cover;
         height: 200px;
