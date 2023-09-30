@@ -264,6 +264,7 @@
         p {
           line-height: 1.23;
           margin-bottom: 1rem;
+          flex: 1 1 100%;
         }
 
         &:hover {
@@ -277,6 +278,7 @@
         }
         span {
           align-self: flex-end;
+          flex: 1 1 100%;
         }
       }
 
