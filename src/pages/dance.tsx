@@ -165,76 +165,14 @@ export default function Dance() {
               style={{ width: '100vw', height: '100vh' }}
               priority
             />
-            {/* <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
-              <source src="/gatsby-snippet.mov" />
-            </video>
-            <Image
-              src="/bar-mitzvah.png"
-              alt="Fitness"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100vw', height: '100vh' }}
-              priority
-            />
-            <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
-              <source src="/gatsby-snippet-2.mov" />
-            </video>
-            <Image
-              src="/bubbles.jpeg"
-              alt="Fitness"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100vw', height: '100vh' }}
-              priority
-            />
-            <video autoPlay muted loop style={{ width: '100vw', height: '100vh' }}>
-              <source src="/band-choreo.mp4" />
-            </video>
-            <Image
-              src="/crowd.png"
-              alt="Fitness"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100vw', height: '100vh' }}
-              priority
-            />
-            <Image
-              src="/follow-the-leader.png"
-              alt="Fitness"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100vw', height: '100vh' }}
-              priority
-            />
-            <Image
-              src="/pink.png"
-              alt="Fitness"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100vw', height: '100vh' }}
-              priority
-            />
-            <Image
-              src="/stretch.png"
-              alt="Fitness"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100vw', height: '100vh' }}
-              priority
-            /> */}
+            
           </Carousel>
         </div>
         <div className="dance-split-media-content">
           <div className="inner">
             <div className="split-content" ref={(el: never) => (textRefs.current[0] = el)}>
               <h2>Skydancer Entertainment</h2>
-              <p>Your preeminent dance casting agency for any event.  We are based in Washington DC but cast dancers on any event worldwide.  Welcome to your world of dance!</p>
+              <p>Your preeminent dance casting agency for any event. We are based in Washington DC but cast dancers on any event worldwide. Welcome to your world of dance!</p>
               <a href="mailto:wendy@skydancerentertainment.com?subject=I'm Looking To Hire Skydancer Entertainment" className="button" >Get in Touch</a>
             </div>
             <div className="split-media">

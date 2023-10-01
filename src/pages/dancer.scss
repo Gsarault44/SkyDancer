@@ -1,13 +1,27 @@
-.booking {
+.dancer {
 
-  .booking-hero {
+  .dance-hero {
+    position: relative;
+    z-index: 0;
     h1 {
       font-weight: 600;
       font-size: 60px;
       max-width: 80%;
+      top: 30%;
       left: 50%;
       transform: translateX(-50%);
       text-shadow: 1px 1px 1px #000;
+      @media all and (max-width: 575px) { 
+        top: 16%;
+      }
+    }
+
+    video {
+      transform: translateY(-248px);
+      margin-bottom: -412px;
+      @media all and (max-width: 575px) { 
+        height: 115vh;
+      }
     }
   }
 
@@ -29,8 +43,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 24px;
     max-width: 560px;
 
     * div {
