@@ -210,6 +210,7 @@ export default function Dance() {
             </div>
             <div className="split-content right" ref={(el: never) => (textRefs.current[1] = el)}>
               <p>Dancers bring energy and excitement to any event.  Add flare to your meeting, sophistication to your gala, hype to your wedding or bar/bat mitzvah.  If you can dream it we can create it.  The sky&apos;s the limit!</p>
+              <a href='/dancer'>Become a Dancer</a>
             </div>
           </div>
           <h2 className="heading2">Skydancer Entertainment is your number one source for DANCE entertainment!</h2>
