@@ -88,7 +88,7 @@ export default function Dance() {
             infinite={true}
           >
             <Image
-              src="/crowd.png"
+              src="/1.jpg"
               alt="Fitness"
               width={0}
               height={0}
@@ -97,7 +97,7 @@ export default function Dance() {
               priority
             />
             <Image
-              src="/dance.png"
+              src="/2.jpg"
               alt="Dance"
               width={0}
               height={0}
@@ -106,7 +106,7 @@ export default function Dance() {
               priority
             />
             <Image
-              src="/ballet-yellow.png"
+              src="/3.jpg"
               alt="Ballet"
               width={0}
               height={0}
@@ -115,13 +115,10 @@ export default function Dance() {
               priority
             />
             <video autoPlay muted loop style={{ width: '100vw', height: '100vh', objectPosition: 'center' }}>
-              <source src="/breakdance-trim.mov" />
-            </video>
-            <video autoPlay muted loop style={{ width: '100vw', height: '100vh', objectPosition: 'center' }}>
-              <source src="/promo-white.mp4" />
+              <source src="/4.mov" />
             </video>
             <Image
-              src="/shadow.png"
+              src="/45.jpg"
               alt="Ballet"
               width={0}
               height={0}
@@ -130,7 +127,7 @@ export default function Dance() {
               priority
             />
             <Image
-              src="/leg-up.jpg"
+              src="/5.jpg"
               alt="Ballet"
               width={0}
               height={0}
@@ -139,7 +136,16 @@ export default function Dance() {
               priority
             />
             <Image
-              src="/ballet.png"
+              src="/6.jpg"
+              alt="Ballet"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100vw', height: '100vh', objectPosition: 'auto 25%'}}
+              priority
+            />
+            <Image
+              src="/65.jpg"
               alt="Ballet"
               width={0}
               height={0}
@@ -148,7 +154,7 @@ export default function Dance() {
               priority
             />
             <Image
-              src="/follow-the-leader.png"
+              src="/7.jpg"
               alt="Ballet"
               width={0}
               height={0}
@@ -157,7 +163,7 @@ export default function Dance() {
               priority
             />
             <Image
-              src="/stretch.png"
+              src="/8.jpg"
               alt="Ballet"
               width={0}
               height={0}
@@ -173,7 +179,7 @@ export default function Dance() {
             <div className="split-content" ref={(el: never) => (textRefs.current[0] = el)}>
               <h2>Skydancer Entertainment</h2>
               <p>Your preeminent dance casting agency for any event. We are based in Washington DC but cast dancers on any event worldwide. Welcome to your world of dance!</p>
-              <a href="mailto:wendy@skydancerentertainment.com?subject=I'm Looking To Hire Skydancer Entertainment" className="button" >Get in Touch</a>
+              <a href="/booking" className="button" >Get in Touch</a>
             </div>
             <div className="split-media">
               <Image
@@ -210,7 +216,7 @@ export default function Dance() {
             </div>
             <div className="split-content right" ref={(el: never) => (textRefs.current[1] = el)}>
               <p>Dancers bring energy and excitement to any event.  Add flare to your meeting, sophistication to your gala, hype to your wedding or bar/bat mitzvah.  If you can dream it we can create it.  The sky&apos;s the limit!</p>
-              <a href='/dancer'>Become a Dancer</a>
+              <a href='/dancer' className="button">Become a Dancer</a>
             </div>
           </div>
           <h2 className="heading2">Skydancer Entertainment is your number one source for DANCE entertainment!</h2>
@@ -241,7 +247,7 @@ export default function Dance() {
           <div className="inner">
             <div className="what-we-do-content">
               <h2 className="heading">What We Do</h2>
-              <video autoPlay muted loop style={{ width: '100%', height: '400px', objectFit: 'contain' }}>
+              <video autoPlay muted loop style={{ width: '100%', objectFit: 'contain' }}>
                 <source src="/skydancer-promo2.mp4" />
               </video>
               <h3>At Skydancer Entertainment, we&apos;re all about turning ordinary events into extraordinary experiences. Whether it&apos;s a special celebration, corporate gathering, Flash Mob, Ball Room, Jazz, or any occasion</h3>

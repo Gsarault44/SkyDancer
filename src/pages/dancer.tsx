@@ -11,6 +11,7 @@ const isEmail = (email: string) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.t
 
 export const ContactUs = () => {
   const [errors, setErrors] = useState(false);
+  const [thanks, setThanks] = useState(false);
   const validateAndSubmitForm = (e: any) => {
 
  
@@ -28,47 +29,60 @@ export const ContactUs = () => {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs.sendForm('service_yz0e3ad', 'template_mlghmfv', form.current, 'SgPX_lb0_LriOGFYT')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    if(form.current[0].value.length > 0 && form.current[1].value.length > 0 && form.current[2].value.length > 0) {
+      setThanks(true);
+      emailjs.sendForm('service_yz0e3ad', 'template_mlghmfv', form.current, 'SgPX_lb0_LriOGFYT')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        }  
+      );
+    }
   };
 
   return (
-    <form ref={form} onSubmit={e => sendEmail(e)} className='booking-form'>
-      <div className="form-flex">
-        <div>
-          <label className="booking-name-label">Name</label>
-          <input
-            className="booking-name"
-            placeholder='Full Name'
-            type="text"
-            name="user_name"
-            onChange={() => {}}
-          />
+    <>
+      {thanks && (
+        <div className="modal-small">
+          <span className="close" onClick={() => setThanks(false)}>X</span>
+          <h2>Thank you!</h2>
+          <p>We will be in touch soon</p>
         </div>
-        <div className={errors ? 'error' : 'good'}>
-          <label className="booking-email-label">Email</label>
-          <input
-            className="booking-email"
-            placeholder='email@email.com'
-            type="email"
-            name="user_email"
-            onBlur={(e) => validateAndSubmitForm(e.target.value)}
-          />
+      )}
+      <form ref={form} onSubmit={e => sendEmail(e)} className='booking-form'>
+        <div className="form-flex">
+          <div>
+            <label className="booking-name-label">Name</label>
+            <input
+              className="booking-name"
+              placeholder='Full Name'
+              type="text"
+              name="user_name"
+              onChange={() => {}}
+            />
+          </div>
+          <div className={errors ? 'error' : 'good'}>
+            <label className="booking-email-label">Email</label>
+            <input
+              className="booking-email"
+              placeholder='email@email.com'
+              type="email"
+              name="user_email"
+              onBlur={(e) => validateAndSubmitForm(e.target.value)}
+            />
+          </div>
         </div>
-      </div>
-      <label className="booking-message-label">Tell us your talent! Add a url of what you’ve done or tell us what you can do.</label>
-      <textarea
-        className="booking-message"
-        placeholder='Im holding an event for...'
-        name="message"
-        onChange={() => {}}
-      />
-      <input type="submit" value="Become a Dancer" />
-    </form>
+        <label className="booking-message-label">Why do you want to join?</label>
+        <textarea
+          className="booking-message"
+          placeholder='I would love to join Skydancer Entertainment because...'
+          name="message"
+          onChange={() => {}}
+        />
+        <input type="submit" value="Become a Dancer" />
+      </form>
+    </>
   );
 };
 export default function Dance() {

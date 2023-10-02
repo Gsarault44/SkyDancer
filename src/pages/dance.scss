@@ -116,18 +116,18 @@
     * {
       color: #000;
     }
-    .button  {
-      border: 1px solid #fff;
-      padding: 1rem;
-      transition: all 0.23s ease-out;
+  }
+  .button  {
+    border: 1px solid #fff;
+    padding: 1rem;
+    transition: all 0.23s ease-out;
 
-      &:hover{
-        color: #000;
-        background-color: #fff;;
-      }
+    &:hover{
+      color: #000;
+      background-color: #fff;;
     }
   }
-
+  
   .heading2 {
     position: relative;
   }
@@ -198,6 +198,10 @@
 .what-we-do {
   padding: 3rem 0;
   background-color: #094c79;
+  
+  video {
+    max-height: 400px;
+  }
 
   h3 {
     width: 90%;
@@ -237,12 +241,15 @@
     gap: 1rem;
     
     li {
-      flex: 1 1 25%;
+      flex: 1 1 100%;
       border-radius: 8px;
       text-align: left;
       background-color: rgba(255,255,255,0.2);
       padding-bottom: 2rem;
       overflow: hidden;
+      @media all and (min-width: 575px) {
+        flex: 1 1 25%;
+      }
 
 
       .card-content {
@@ -392,6 +399,36 @@
   
   cite {
     display: block;
+  }
+}
+
+.modal-small {
+  position: fixed;
+  background-color: #000;
+  padding: 3rem; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  @media all and (min-width: 575px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 30vw;
+    max-height: 30vh;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 32px;
+    cursor: pointer;
   }
 }
 
