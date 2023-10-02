@@ -54,6 +54,7 @@ export const ContactUs = () => {
         </div>
       )}
       <form ref={form} onSubmit={e => sendEmail(e)} className='booking-form'>
+        <h2>Open Auditions!</h2>
         <div className="form-flex">
           <div>
             <label className="booking-name-label">Name</label>
