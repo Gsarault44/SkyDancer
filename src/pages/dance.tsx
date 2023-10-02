@@ -179,7 +179,7 @@ export default function Dance() {
             <div className="split-content" ref={(el: never) => (textRefs.current[0] = el)}>
               <h2>Skydancer Entertainment</h2>
               <p>Your preeminent dance casting agency for any event. We are based in Washington DC but cast dancers on any event worldwide. Welcome to your world of dance!</p>
-              <a href="/booking" className="button" >Get in Touch</a>
+              <Link href="/booking" className="button" >Get in Touch</Link>
             </div>
             <div className="split-media">
               <Image
@@ -216,7 +216,7 @@ export default function Dance() {
             </div>
             <div className="split-content right" ref={(el: never) => (textRefs.current[1] = el)}>
               <p>Dancers bring energy and excitement to any event.  Add flare to your meeting, sophistication to your gala, hype to your wedding or bar/bat mitzvah.  If you can dream it we can create it.  The sky&apos;s the limit!</p>
-              <a href='/dancer' className="button">Become a Dancer</a>
+              <Link href='/dancer' className="button">Become a Dancer</Link>
             </div>
           </div>
           <h2 className="heading2">Skydancer Entertainment is your number one source for DANCE entertainment!</h2>

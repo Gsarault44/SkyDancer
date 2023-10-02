@@ -98,7 +98,9 @@ export default function Dance() {
                 <h3><a href="https://kstreetunion.com/" target='_blank'>K Street Union</a></h3>
                 <p>K Street Union is an 8-11 piece super group of industry powerhouses who’ve come together in a line up excelling at genres from Jazz-Lounge to Retro-Pop, Indie to Rock, and Motown to Top 40 Dance Hits.</p>
                 <div className="band-video-links">
-                  <a href="https://www.youtube.com/watch?v=vOcFZQns0BI&t=5s"target='_blank'><img src="https://i3.ytimg.com/vi/vOcFZQns0BI/maxresdefault.jpg" alt="K Street Union" /></a>
+                  <Link href="https://www.youtube.com/watch?v=vOcFZQns0BI&t=5s"target='_blank'>
+                    <img src="https://i3.ytimg.com/vi/vOcFZQns0BI/maxresdefault.jpg" alt="K Street Union" />
+                  </Link>
                 </div>
               </div>
               <div className='band-partner'>
@@ -106,14 +108,14 @@ export default function Dance() {
                 <p>If you are planning a party and you need continuous music that is perfect for everyone, DC Synergy may be just the perfect band.</p>
                 <div className="band-video-links">
                   <div>
-                  <a href="https://youtu.be/xJHmytqKHF8" target="_blank">
+                  <Link href="https://youtu.be/xJHmytqKHF8" target="_blank">
                     <img src="https://i3.ytimg.com/vi/xJHmytqKHF8/maxresdefault.jpg" alt="DC Synergy " />
-                  </a>
+                  </Link>
                   </div>
                   <div>
-                  <a href="https://www.youtube.com/watch?v=WvYNQT94ick" target="_blank">  
+                  <Link href="https://www.youtube.com/watch?v=WvYNQT94ick" target="_blank">  
                     <img src="https://i3.ytimg.com/vi/WvYNQT94ick/maxresdefault.jpg" alt="DC Synergy Group"/>
-                  </a>
+                  </Link>
                   </div>
                   </div>
               </div>

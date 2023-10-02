@@ -29,7 +29,10 @@ export const ContactUs = () => {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if(form.current[0].value.length > 0 && form.current[1].value.length > 0 && form.current[2].value.length > 0) {
+    const input1 = form.current[0] as HTMLInputElement
+    const input2 = form.current[1] as HTMLInputElement 
+    const input3 = form.current[2] as HTMLInputElement
+    if(input1.value.length > 0 && input2.value.length > 0 && input3.value.length > 0) {
       setThanks(true);
       emailjs.sendForm('service_yz0e3ad', 'template_mlghmfv', form.current, 'SgPX_lb0_LriOGFYT')
         .then((result) => {
