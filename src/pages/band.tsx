@@ -78,7 +78,7 @@ export default function Dance() {
                 width={0}
                 height={0}
                 sizes='100vw'
-                style={{ width: '50%', height: ' 100%', maxHeight: '200vh', objectFit: 'cover', objectPosition: 'center' }}
+                style={{ maxWidth: '75%', height: ' 100%', maxHeight: '180vh', objectFit: 'cover', objectPosition: 'center', margin: '0 auto' }}
                 priority
               />
             </div>
