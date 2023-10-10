@@ -78,17 +78,7 @@ export default function Dance() {
                 width={0}
                 height={0}
                 sizes='100vw'
-                style={{ width: '50%', height: '50%', objectFit: 'cover' }}
-                priority
-              />
-              <Image
-                ref={(el: never) => (imageRefs.current[0] = el)}
-                src="/band-2.jpg"
-                alt="Fitness"
-                width={0}
-                height={0}
-                sizes='100vw'
-                style={{ width: '50%', height: '50%', objectFit: 'cover' }}
+                style={{ width: '50%', height: ' 100%', maxHeight: '200vh', objectFit: 'cover', objectPosition: 'center' }}
                 priority
               />
             </div>
