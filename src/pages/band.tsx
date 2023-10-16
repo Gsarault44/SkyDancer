@@ -1,8 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import { Urbanist } from 'next/font/google'
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Link from 'next/link';
 
@@ -58,7 +57,7 @@ export default function Dance() {
       </Head>
       <main className={`${urbanist.className} band`}>
         <div className="band-hero">
-        <video autoPlay muted loop style={{ width: '100vw', height: '100vh', objectPosition: 'center', objectFit: 'cover' }}>
+        <video autoPlay muted loop style={{ width: '100vw', maxHeight: '70vh', objectPosition: 'center', objectFit: 'contain' }}>
           <source src="/band-choreo.mp4" />
         </video>
         </div>
@@ -78,7 +77,7 @@ export default function Dance() {
                 width={0}
                 height={0}
                 sizes='100vw'
-                style={{ maxWidth: '75%', height: ' 100%', maxHeight: '180vh', objectFit: 'cover', objectPosition: 'center', margin: '0 auto' }}
+                style={{ maxWidth: '75%', height: ' 100%', maxHeight: '70vh', objectFit: 'contain', objectPosition: 'center', margin: '0 auto' }}
                 priority
               />
             </div>
