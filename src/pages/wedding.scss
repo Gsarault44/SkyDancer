@@ -4,9 +4,22 @@
   * {
     color: #fff;
   }
-  .dance-hero h1 {
-    padding: 0 20px;
-  }
+  .dance-hero {
+    h1 {
+      max-width: 75%;
+      margin: 0 auto;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0 20px;
+      bottom: 0;
+    }
+    video {
+      max-height: 600px;
+      margin: 0 auto;
+      min-width: 800px;
+      object-position: 0 15%;
+    }
+  } 
   .intro {
 
 

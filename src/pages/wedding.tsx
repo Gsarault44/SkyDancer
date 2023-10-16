@@ -76,7 +76,7 @@ export default function Dance() {
       <main className={`${urbanist.className} wedding`}>
         <div className="dance-hero">
           <h1>Elevate Your First Dance: Let Us Teach You the Magic!</h1>
-            <video autoPlay muted loop style={{ width: '100vw', height: '100vh', objectPosition: 'center' }}>
+            <video autoPlay muted loop>
               <source src="/video-from-wendy.mp4" />
             </video>
         </div>

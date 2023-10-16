@@ -139,7 +139,7 @@ export default function Dance() {
       </Head>
       <main className={`${urbanist.className} booking`}>
         <div className="dance-hero">
-          <video autoPlay muted loop style={{ width: '100vw', height: '90vh', objectPosition: 'top' }}>
+          <video autoPlay muted loop>
             <source src="/gatsby-snippet.mov" />
           </video>
           <h1>Book a Dancer</h1>

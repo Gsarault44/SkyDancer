@@ -1,26 +1,33 @@
 .booking {
 
-  .booking-hero {
+  .dance-hero {
     h1 {
       font-weight: 600;
       font-size: 60px;
       max-width: 80%;
       left: 50%;
+      bottom: 0;
       transform: translateX(-50%);
-      text-shadow: 1px 1px 1px #000;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      max-height: 600px;
+      object-fit: contain;
+      object-position: top;
+      display: block;
     }
   }
 
   .intro {
     position: relative;
-
     video {
       width: 100%;
-      height: 100%;
       min-height: 600px;
-      object-fit: cover;
-      object-position: top;
+      max-height: 700px;
       display: block;
+      object-fit: cover;
+      object-position: center;
     }
   }
 
@@ -78,10 +85,12 @@
       margin-bottom: 2rem;
       font-size: 18px;
       color: #fff;
+      border-radius: 3px;
     }
     input[type="submit"] {
       background-color: #fff;
       color: #000;
+      border-radius: 4px;
       font-weight: 700;
       font-size: 24px;
       padding: 8px 16px;

@@ -31,6 +31,14 @@
 
   .intro {
     position: relative;
+    video {
+      width: 100%;
+      min-height: 600px;
+      max-height: 700px;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
   .booking-form {
@@ -39,7 +47,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    padding: 0 24px;
+    padding: 24px;
     max-width: 560px;
     h2{
       font-size: 32px;
@@ -92,9 +100,11 @@
       margin-bottom: 2rem;
       font-size: 18px;
       color: #fff;
+      border-radius: 3px;
     }
     input[type="submit"] {
       background-color: #fff;
+      border-radius: 4px;
       color: #000;
       font-weight: 700;
       font-size: 24px;
