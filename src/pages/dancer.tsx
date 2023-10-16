@@ -140,7 +140,7 @@ export default function Dance() {
       </Head>
       <main className={`${urbanist.className} dancer`}>
         <div className="dance-hero">
-          <video autoPlay muted loop style={{ minHeight: '600px' }}>
+          <video autoPlay muted loop>
             <source src="/hustle-snippet.mov" />
           </video>
           <h1>Become a SkyDancer</h1>

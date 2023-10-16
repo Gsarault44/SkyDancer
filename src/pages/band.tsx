@@ -57,9 +57,10 @@ export default function Dance() {
       </Head>
       <main className={`${urbanist.className} band`}>
         <div className="band-hero">
-        <video autoPlay muted loop style={{ width: '100vw', maxHeight: '70vh', objectPosition: 'center', objectFit: 'contain' }}>
-          <source src="/band-choreo.mp4" />
-        </video>
+          <video autoPlay muted loop style={{ width: '100vw', maxHeight: '70vh', objectPosition: 'center', objectFit: 'contain' }}>
+            <source src="/band-choreo.mp4" />
+          </video>
+          <h1>Dance Choreography</h1>
         </div>
         <div className="intro">
           <div className="intro__inner">
