@@ -55,15 +55,29 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
               </Link>
             </div>
-              <Link href="https://sky-dancer-fitness.vercel.app/">
-                Fitness
+            <div className="header-links">
+              <Link href="#about">
+                About
               </Link>
-              <Link href="https://sky-dancer.vercel.app/">
-                Dance
+              <Link href="/booking">
+                Book a Dancer
+              </Link>
+              <Link href="/dancer">
+                Audition
+              </Link>
+              <Link href="/contact">
+                Contact
               </Link>
               <Link href="https://sky-dancer-yoga.vercel.app/">
                 Yoga
               </Link>
+              <Link href="https://sky-dancer-fitness.vercel.app/">
+                Fitness
+              </Link>
+              <Link href="https://sky-dancer-yoga.vercel.app/">
+                Yoga
+              </Link>
+            </div>
             </nav>
           </div>}
         </header>

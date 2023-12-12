@@ -15,11 +15,17 @@ button.button {
   }
 }
 
+html * {
+  scroll-behavior:smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 .header nav .head-logo {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  z-index: 999;
   display: none;
   @media all and (min-width: 575px) {
     display: block;
@@ -58,7 +64,7 @@ button.button {
   position: fixed;
   background-color: #000;
   @media all and (min-width: 575px) {
-    padding: 2.1rem 0;
+    padding: 0;
     background-color: rgba(#000, 0.15);
   }
 
@@ -117,6 +123,7 @@ button.button {
       @media all and (min-width: 575px) {
         flex-direction: row;
         height: auto;
+        justify-content: space-between;
       }
   
       &.nav-open {
@@ -139,9 +146,9 @@ button.button {
         }
       }
       a {
-        padding: 0.25rem 1rem;
+        padding: 0.25rem 0.5rem;
         font-size: 20px;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.25px;
         border-bottom: 1px solid transparent;
         background-color: transparent;
         transition: all 0.34s ease-in-out;
@@ -169,6 +176,15 @@ button.button {
     @media all and (min-width: 575px) {
       flex-direction: row;
       height: auto;
+      justify-content: space-between;
+    }
+
+    .header-links {
+      @media all and (min-width: 575px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
     }
 
     &.nav-open {
@@ -191,9 +207,10 @@ button.button {
       }
     }
     a {
-      padding: 0.25rem 1rem;
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
       font-size: 20px;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.25px;
       border-bottom: 1px solid transparent;
       background-color: transparent;
       transition: all 0.34s ease-in-out;

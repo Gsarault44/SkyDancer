@@ -77,7 +77,7 @@ export default function Dance() {
         <div className="dance-hero">
           <h1>Elevate Your First Dance: Let Us Teach You the Magic!</h1>
             <video autoPlay muted loop>
-              <source src="/video-from-wendy.mp4" />
+              <source src="/wedding-trimmed.mp4" />
             </video>
         </div>
         <div className="intro">

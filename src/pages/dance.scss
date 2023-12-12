@@ -331,6 +331,7 @@
   background-image: url('/blue-lights.jpg');
   background-size: cover;
   position: relative;
+  scroll-behavior: smooth;
   
   &:before {
     content: '';
