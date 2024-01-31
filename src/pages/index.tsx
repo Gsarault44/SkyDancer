@@ -32,6 +32,7 @@ export default function Home() {
               sizes='100vw'
               style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
               priority
+              loading="eager"
               />
           </Link>
           <Link href='/dance' className='home__link'>
@@ -43,6 +44,7 @@ export default function Home() {
                 width={250}
                 height={125}
                 priority
+                loading="eager"
               />
             </div>
             <Image
@@ -53,6 +55,7 @@ export default function Home() {
               sizes='100vw'
               style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
               priority
+              loading="eager"
             />
           </Link>
           <Link href='https://sky-dancer-yoga.vercel.app/' className='home__link'>

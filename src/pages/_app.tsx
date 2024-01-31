@@ -51,7 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
                   alt="Skydance Entertainment"
                   width={250}
                   height={90}
-                  priority
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -67,9 +67,6 @@ export default function App({ Component, pageProps }: AppProps) {
               </Link>
               <Link href="/contact">
                 Contact
-              </Link>
-              <Link href="https://sky-dancer-yoga.vercel.app/">
-                Yoga
               </Link>
               <Link href="https://sky-dancer-fitness.vercel.app/">
                 Fitness

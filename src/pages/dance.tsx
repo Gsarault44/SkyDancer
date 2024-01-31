@@ -95,6 +95,7 @@ export default function Dance() {
               sizes='100vw'
               style={{ width: '100vw', height: '100vh' }}
               priority
+              loading="eager"
             />
             <Image
               src="/2.jpg"
@@ -257,7 +258,7 @@ export default function Dance() {
                   <Image
                     src="/face-to-face-dance.jpg"
                     alt="wedding"
-                    width={300}
+                    width={325}
                     height={200}
                     priority
                   />
@@ -272,7 +273,7 @@ export default function Dance() {
                     <Image
                       src="/Basheer-big-jump.jpg"
                       alt="Corporate Events"
-                      width={300}
+                      width={325}
                       height={200}
                       priority
                     />
@@ -287,7 +288,7 @@ export default function Dance() {
                     <Image
                       src="/band-dance.png"
                       alt="Corporate Events"
-                      width={300}
+                      width={325}
                       height={200}
                       priority
                     />

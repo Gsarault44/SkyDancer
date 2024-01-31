@@ -44,14 +44,22 @@ export const ContactUs = () => {
     }
   };
 
+  const closeModal = () => {
+    form.current.reset();
+    setThanks(false)
+  }
+
   return (
     <>
       {thanks && (
-        <div className="modal-small">
-          <span className="close" onClick={() => setThanks(false)}>X</span>
-          <h2>Thank you!</h2>
-          <p>We will be in touch soon</p>
-        </div>
+        <div className="modal-wrapper">
+          <div className="catcher" onClick={closeModal}></div>
+          <div className="modal-small">
+            <span className="close" onClick={closeModal}>X</span>
+            <h2>Thank you!</h2>
+            <p>We will be in touch soon</p>
+          </div>
+          </div>
       )}
       <form ref={form} onSubmit={e => sendEmail(e)} className='booking-form'>
         <h2>Open Auditions!</h2>
