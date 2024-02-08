@@ -149,7 +149,7 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100vw', height: '100vh' }}
+              style={{ width: '100vw', height: '100vh', objectPosition: '20%'}}
               priority
             />
             <Image

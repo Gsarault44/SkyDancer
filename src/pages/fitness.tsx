@@ -42,14 +42,6 @@ export default function Yoga() {
           <p>
             Fitness
           </p>          
-          <Image
-            className="logo"
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
       </main>
     </>
   )
