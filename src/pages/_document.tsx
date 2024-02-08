@@ -1,11 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 export default function Document() {
-  //const router = useRouter();
-  
   return (
     <Html lang="en">
       <Head>
@@ -25,6 +20,31 @@ export default function Document() {
             });
           `,
             }}
+          />
+          <meta
+            key="description"
+            name="description"
+            content="Sharing our passion for dance."
+          />
+          <meta
+            key="og:type"
+            name="og:type"
+            content="website"
+          />
+          <meta
+            key="og:title"
+            name="og:title"
+            content="Skydancer Entertainment"
+          />
+          <meta
+            key="og:description"
+            name="og:description"
+            content="Sharing our passion for dance."
+          />
+          <meta
+            key="og:image"
+            name="og:image"
+            content="/dance.png"
           />
       </Head>
       <body>

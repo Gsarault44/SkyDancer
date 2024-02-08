@@ -21,6 +21,7 @@
     }
 
     img {
+      display: block;
       opacity: 0.1;
       animation: fadeIn 0.5s ease-in forwards;
     }
@@ -48,7 +49,9 @@
     }
 
     &:hover {
-      width: 60%;
+      @media all and (min-width: 575px) {
+        width: 60%;
+      }
 
       &:after {
         opacity: 0;

@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }: AppProps) {
               </Link>
             </div>
             <div className="header-links">
-              <Link href="#about">
+              <Link href="/dance/#about">
                 About
               </Link>
               <Link href="/booking">
