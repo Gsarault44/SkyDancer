@@ -21,31 +21,6 @@ export default function Document() {
           `,
             }}
           />
-          <meta
-            key="description"
-            name="description"
-            content="Sharing our passion for dance."
-          />
-          <meta
-            key="og:type"
-            name="og:type"
-            content="website"
-          />
-          <meta
-            key="og:title"
-            name="og:title"
-            content="Skydancer Entertainment"
-          />
-          <meta
-            key="og:description"
-            name="og:description"
-            content="Sharing our passion for dance."
-          />
-          <meta
-            key="og:image"
-            name="og:image"
-            content="/dance.png"
-          />
       </Head>
       <body>
         <Main />
