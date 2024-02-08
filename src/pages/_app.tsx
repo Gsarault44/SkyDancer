@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="og:description"
           content="Sharing our passion for dance."
         />
-        <meta property="og:image" content="https://myurl.com/ogImage.png" />
+        <meta property="og:image" content="/dance.png" />
       </Head>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
       {router.pathname != '/' && <div>
