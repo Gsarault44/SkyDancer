@@ -31,27 +31,22 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <Head>
-        <meta
-          key="description"
-          name="description"
-          content="Sharing our passion for dance."
-        />
-        <meta
-          key="og:type"
-          name="og:type"
-          content="website"
-        />
-        <meta
-          key="og:title"
-          name="og:title"
-          content="Skydancer Entertainment"
-        />
-        <meta
-          key="og:description"
-          name="og:description"
-          content="Sharing our passion for dance."
-        />
-        <meta property="og:image" content="/crowd-share.jpeg" />
+        <title>Skydancer Entertainment</title>
+        <meta name="description" content="Sharing our passion for dance."/>
+
+        <meta property="og:url" content="https://sky-dancer.vercel.app/dance"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Skydancer Entertainment"/>
+        <meta property="og:description" content="Sharing our passion for dance."/>
+        <meta property="og:image" content="/crowd-share.jpeg"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="sky-dancer.vercel.app"/>
+        <meta property="twitter:url" content="https://sky-dancer.vercel.app/dance"/>
+        <meta name="twitter:title" content="Skydancer Entertainment"/>
+        <meta name="twitter:description" content="Sharing our passion for dance."/>
+        <meta name="twitter:image" content="/crowd-share.jpeg"/>
+
       </Head>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
       {router.pathname != '/' && <div>
