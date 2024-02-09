@@ -7,6 +7,12 @@ import { Nanum_Gothic, Poppins } from 'next/font/google';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: '...',
+  description: '...',
+}
 
 const inter = Nanum_Gothic({ weight: "400", subsets: ['latin'] })
 const pop = Poppins({ weight: "200", subsets: ['latin'] })
@@ -45,7 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="og:description"
           content="Sharing our passion for dance."
         />
-        <meta property="og:image" content="/dance.png" />
+        <meta property="og:image" content="/crowd-share.jpeg" />
       </Head>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
       {router.pathname != '/' && <div>

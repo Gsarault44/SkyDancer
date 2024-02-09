@@ -77,7 +77,7 @@ export default function Dance() {
           <meta
             key="og:image"
             name="og:image"
-            content="/dance.png"
+            content="/crowd.png"
           />
       </Head>
       <main className={`${urbanist.className} band`}>

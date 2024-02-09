@@ -74,6 +74,7 @@ export default function Dance() {
         <meta name="description" content="SkyDancer Entertainment" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        {/* <meta name="twitter:card" content="summary" />
         <meta
             key="description"
             name="description"
@@ -97,8 +98,8 @@ export default function Dance() {
           <meta
             key="og:image"
             name="og:image"
-            content="/dance.png"
-          />
+            content="/crowd-share.png"
+          /> */}
       </Head>
       <main className={`${urbanist.className} dance`}>
         <div className="dance-hero">
