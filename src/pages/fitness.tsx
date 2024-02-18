@@ -1,15 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const pop = Poppins({ weight: "200", subsets: ['latin'] });
 
 export default function Yoga() {
   return (
     <>
       <Head>
-        <title>SkyDancer Entertainment</title>
-        <meta name="description" content="SkyDancer Entertainment" />
+        <title>SkyDancer Entertainment&trade;</title>
+        <meta name="description" content="SkyDancer Entertainment&trade;" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,7 +25,7 @@ export default function Yoga() {
           <meta
             key="og:title"
             name="og:title"
-            content="Skydancer Entertainment"
+            content="Skydancer Entertainment&trade;"
           />
           <meta
             key="og:description"
@@ -38,7 +38,7 @@ export default function Yoga() {
             content="/dance.png"
           />
       </Head>
-      <main className={`${inter.className}`}>
+      <main className={`${pop.className}`}>
           <p>
             Fitness
           </p>          

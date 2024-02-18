@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import { Urbanist } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Link from 'next/link';
 
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
+const pop = Poppins({ weight: "200", subsets: ['latin'] });
 
 export default function Dance() {
 
@@ -68,8 +68,8 @@ export default function Dance() {
   return (
     <>
       <Head>
-        <title>SkyDancer Entertainment</title>
-        <meta name="description" content="SkyDancer Entertainment" />
+        <title>SkyDancer Entertainment&trade;</title>
+        <meta name="description" content="SkyDancer Entertainment&trade;" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -85,7 +85,7 @@ export default function Dance() {
           <meta
             key="og:title"
             name="og:title"
-            content="Skydancer Entertainment"
+            content="Skydancer Entertainment&trade;"
           />
           <meta
             key="og:description"
@@ -98,9 +98,9 @@ export default function Dance() {
             content="/dance.png"
           />
       </Head>
-      <main className={`${urbanist.className} corporate`}>
+      <main className={`${pop.className} corporate`}>
         <div className="dance-hero">
-          <h1>Turning Corporate Events into Masterpieces: Skydancer Entertainment Leads the Way</h1>
+          <h1>Turning Corporate Events into Masterpieces: Skydancer Entertainment&trade; Leads the Way</h1>
           <Image
             src="/headstand-brasheer.jpg"
             alt="headstand"
@@ -114,7 +114,7 @@ export default function Dance() {
         <div className="intro">
           <div className="intro__inner">
             <div className="intro-title" ref={(el: never) => (textRefs.current[0] = el)}>
-              <h3>Incorporating dance entertainment into your corporate event can add a dynamic and captivating dimension that engages your audience like never before. Whether it’s a mesmerizing contemporary performance, an elegant ballet, or a high-energy hip-hop routine, dance has the power to transcend language barriers and convey emotions, themes, and messages in a uniquely compelling way. It not only entertains but also inspires, fostering a sense of unity and excitement among attendees. Dance infuses energy into your event, creating unforgettable moments and leaving a lasting impression that will have your guests talking about your corporate gathering for years to come. It’s the perfect way to break the ice, encourage networking, and elevate the overall experience, ensuring your event stands out as a memorable and impactful occasion.</h3>
+              <h3>Incorporating dance entertainment into your corporate event can add a dynamic and captivating dimension that engages your audience like never before. Whether it’s a mesmerizing contemporary performance, an elegant ballet, or a high-energy hip-hop routine, dance has the power to transcend language barriers and convey emotions, themes, and messages in a uniquely compelling way. It’s the perfect way to break the ice, encourage networking, and elevate the overall experience, ensuring your event stands out as a memorable and impactful occasion.</h3>
             </div>
             <div className="intro-image">
               <Image

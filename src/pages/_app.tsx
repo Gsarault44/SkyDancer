@@ -23,27 +23,24 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <style jsx global>{`
-        html main * {
-          font-family: ${inter.style.fontFamily};
-        }
         html body * {
           font-family: ${pop.style.fontFamily};
         }
       `}</style>
       <Head>
-        <title>Skydancer Entertainment</title>
+        <title>Skydancer Entertainment&trade;</title>
         <meta name="description" content="Sharing our passion for dance."/>
 
         <meta property="og:url" content="https://sky-dancer.vercel.app/dance"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Skydancer Entertainment"/>
+        <meta property="og:title" content="Skydancer Entertainment&trade;"/>
         <meta property="og:description" content="Sharing our passion for dance."/>
         <meta property="og:image" content="/crowd-share.jpeg"/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta property="twitter:domain" content="sky-dancer.vercel.app"/>
         <meta property="twitter:url" content="https://sky-dancer.vercel.app/dance"/>
-        <meta name="twitter:title" content="Skydancer Entertainment"/>
+        <meta name="twitter:title" content="Skydancer Entertainment&trade;"/>
         <meta name="twitter:description" content="Sharing our passion for dance."/>
         <meta name="twitter:image" content="/crowd-share.jpeg"/>
 
@@ -74,31 +71,48 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Image
                   src="/logo.png"
                   alt="Skydance Entertainment"
-                  width={250}
-                  height={90}
+                  width={280}
+                  height={100}
                   loading="lazy"
                 />
               </Link>
             </div>
             <div className="header-links">
-              <Link href="/dance/#about">
-                About
-              </Link>
-              <Link href="/booking">
-                Book a Dancer
-              </Link>
-              <Link href="/dancer">
-                Audition
-              </Link>
-              <Link href="/contact">
-                Contact
-              </Link>
-              <Link href="https://sky-dancer-fitness.vercel.app/">
-                Fitness
-              </Link>
-              <Link href="https://sky-dancer-yoga.vercel.app/">
-                Yoga
-              </Link>
+              <div className="header-links-group">
+                <Link href="/">
+                  Home
+                </Link>
+                <Link href="/dance/#about">
+                  About
+                </Link>
+                <Link href="/booking">
+                  Book a Dancer
+                </Link>
+                <Link href="/dancer">
+                  Audition
+                </Link>
+                <Link href="/contact">
+                  Contact
+                </Link>
+              </div>
+              <div className="header-links-ext">
+                <Link href="https://sky-dancer-fitness.vercel.app/" className="fitness">
+                  <Image
+                    src="/fitness.png"
+                    alt="SkyDancer Fitness"
+                    width={120}
+                    height={60}
+                  />
+                </Link>
+                <Link href="https://sky-dancer-yoga.vercel.app/" className="yoga">
+                  <Image
+                    src="/yoga-logo.png"
+                    alt="SkyDancer Yoga"
+                    width={100}
+                    height={50}
+                  />
+                </Link>
+              </div>
             </div>
             </nav>
           </div>}

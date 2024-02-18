@@ -8,8 +8,8 @@ export default function Yoga() {
   return (
     <>
       <Head>
-        <title>SkyDancer Entertainment</title>
-        <meta name="description" content="SkyDancer Entertainment" />
+        <title>SkyDancer Entertainment&trade;</title>
+        <meta name="description" content="SkyDancer Entertainment&trade;" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,7 +25,7 @@ export default function Yoga() {
           <meta
             key="og:title"
             name="og:title"
-            content="Skydancer Entertainment"
+            content="Skydancer Entertainment&trade;"
           />
           <meta
             key="og:description"

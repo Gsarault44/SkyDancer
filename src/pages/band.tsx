@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import { Urbanist } from 'next/font/google'
+import { Poppins } from 'next/font/google';
 import 'react-multi-carousel/lib/styles.css';
 import Link from 'next/link';
 
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
+const pop = Poppins({ weight: "200", subsets: ['latin'] });
 
 export default function Dance() {
 
@@ -50,8 +50,8 @@ export default function Dance() {
   return (
     <>
       <Head>
-        <title>SkyDancer Entertainment</title>
-        <meta name="description" content="SkyDancer Entertainment" />
+        <title>SkyDancer Entertainment&trade;</title>
+        <meta name="description" content="SkyDancer Entertainment&trade;" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -67,7 +67,7 @@ export default function Dance() {
           <meta
             key="og:title"
             name="og:title"
-            content="Skydancer Entertainment"
+            content="Skydancer Entertainment&trade;"
           />
           <meta
             key="og:description"
@@ -80,7 +80,7 @@ export default function Dance() {
             content="/crowd.png"
           />
       </Head>
-      <main className={`${urbanist.className} band`}>
+      <main className={`${pop.className} band`}>
         <div className="band-hero">
           <video autoPlay muted loop style={{ width: '100vw', maxHeight: '70vh', objectPosition: 'center', objectFit: 'contain' }}>
             <source src="/band-choreo.mp4" />
@@ -90,7 +90,7 @@ export default function Dance() {
         <div className="intro">
           <div className="intro__inner">
             <div className="intro-title" ref={(el: never) => (textRefs.current[0] = el)}>
-              <h3>Are you a singer who wants to add some natural movement while singing?  Do you play an instrument but look like a zombie on stage?  Skydancer Entertainment will carefully choreograph a specifically curated movement just for you.  We bring pizazz to bands, singers and musicians!
+              <h3>Are you a singer who wants to add some natural movement while singing?  Do you play an instrument but look like a zombie on stage?  Skydancer Entertainment&trade; will carefully choreograph a specifically curated movement just for you.  We bring pizazz to bands, singers and musicians!
                 </h3>
             </div>
           </div>

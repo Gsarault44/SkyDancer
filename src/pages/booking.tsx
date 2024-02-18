@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef, FormEvent } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import { Urbanist } from 'next/font/google'
+import { Poppins } from 'next/font/google';
 import 'react-multi-carousel/lib/styles.css';
 import emailjs from '@emailjs/browser';
 
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
+const pop = Poppins({ weight: "200", subsets: ['latin'] });
 
 const isEmail = (email: string) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
 
@@ -140,8 +140,8 @@ export default function Dance() {
   return (
     <>
       <Head>
-        <title>SkyDancer Entertainment</title>
-        <meta name="description" content="SkyDancer Entertainment" />
+        <title>SkyDancer Entertainment&trade;</title>
+        <meta name="description" content="SkyDancer Entertainment&trade;" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -157,7 +157,7 @@ export default function Dance() {
           <meta
             key="og:title"
             name="og:title"
-            content="Skydancer Entertainment"
+            content="Skydancer Entertainment&trade;"
           />
           <meta
             key="og:description"
@@ -170,7 +170,7 @@ export default function Dance() {
             content="/dance.png"
           />
       </Head>
-      <main className={`${urbanist.className} booking`}>
+      <main className={`${pop.className} booking`}>
         <div className="dance-hero">
           <video autoPlay muted loop>
             <source src="/gatsby-snippet.mov" />

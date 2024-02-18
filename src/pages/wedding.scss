@@ -8,13 +8,13 @@
     h1 {
       max-width: 75%;
       margin: 0 auto;
-      left: 50%;
-      transform: translateX(-50%);
       padding: 0 20px;
       bottom: 0;
       font-size: 24px;
+      position: relative;
+      margin-top: 1rem;
       @media all and (min-width: 575px) {
-        font-size: 54px;
+        font-size: 48px;
       }
     }
     video {
@@ -30,7 +30,7 @@
 
 
     &__inner {
-      padding: 3rem 0;
+      padding: 2rem 0;
       width: 90%;
       margin: 0 auto;
     }

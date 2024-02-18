@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import { Urbanist } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Link from 'next/link';
 
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
+const pop = Poppins({ weight: "200", subsets: ['latin'] });
 
 export default function Dance() {
   const [showWeddingModal, setShowWeddingModal] = useState(false);
@@ -70,8 +70,8 @@ export default function Dance() {
   return (
     <>
       <Head>
-        <title>SkyDancer Entertainment</title>
-        <meta name="description" content="SkyDancer Entertainment" />
+        <title>SkyDancer Entertainment&trade;</title>
+        <meta name="description" content="SkyDancer Entertainmen&trade;" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         {/* <meta name="twitter:card" content="summary" />
@@ -101,7 +101,7 @@ export default function Dance() {
             content="/crowd-share.png"
           /> */}
       </Head>
-      <main className={`${urbanist.className} dance`}>
+      <main className={`${pop.className} dance`}>
         <div className="dance-hero">
           <h1>Sharing our passion for dance</h1>
           <Carousel
@@ -115,7 +115,7 @@ export default function Dance() {
           >
             <Image
               src="/1.jpg"
-              alt="Fitness"
+              alt="Stage Dance"
               width={0}
               height={0}
               sizes='100vw'
@@ -146,7 +146,7 @@ export default function Dance() {
             </video>
             <Image
               src="/45.jpg"
-              alt="Ballet"
+              alt="Dance position shadows"
               width={0}
               height={0}
               sizes='100vw'
@@ -155,22 +155,22 @@ export default function Dance() {
             />
             <Image
               src="/5.jpg"
-              alt="Ballet"
+              alt="Danceing"
               width={0}
               height={0}
               sizes='100vw'
               style={{ width: '100vw', height: '100vh' }}
               priority
             />
-            <Image
+            {/* <Image
               src="/6.jpg"
               alt="Ballet"
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100vw', height: '100vh', objectPosition: 'auto 25%'}}
+              style={{ width: '100vw', height: '100vh', objectPosition: 'center 30%'}}
               priority
-            />
+            /> */}
             <Image
               src="/65.jpg"
               alt="Ballet"
@@ -204,7 +204,7 @@ export default function Dance() {
         <div className="dance-split-media-content">
           <div className="inner">
             <div className="split-content" ref={(el: never) => (textRefs.current[0] = el)}>
-              <h2>Skydancer Entertainment</h2>
+              <h2>Skydancer Entertainment&trade;</h2>
               <p>Your preeminent dance casting agency for any event. We are based in Washington DC but cast dancers on any event worldwide. Welcome to your world of dance!</p>
               <Link href="/booking" className="button" >Get in Touch</Link>
             </div>
@@ -246,7 +246,7 @@ export default function Dance() {
               <Link href='/dancer' className="button">Become a Dancer</Link>
             </div>
           </div>
-          <h2 className="heading2">Skydancer Entertainment is your number one source for DANCE entertainment!</h2>
+          <h2 className="heading2">Skydancer Entertainment&trade; is your number one source for DANCE entertainment!</h2>
         </div>
         {showWeddingModal && <>
           <div className='catcher' onClick={() => setShowWeddingModal(!showWeddingModal)}></div>
@@ -277,7 +277,7 @@ export default function Dance() {
               <video autoPlay muted loop style={{ width: '100%', objectFit: 'contain' }}>
                 <source src="/skydancer-promo2.mp4" />
               </video>
-              <h3>At Skydancer Entertainment, we&apos;re all about turning ordinary events into extraordinary experiences. Whether it&apos;s a special celebration, corporate gathering, Flash Mob, Ball Room, Jazz, or any occasion</h3>
+              <h3>At Skydancer Entertainment&trade;, we&apos;re all about turning ordinary events into extraordinary experiences. Whether it&apos;s a special celebration, corporate gathering, Flash Mob, Ball Room, Jazz, or any occasion</h3>
               <ul>
                 <li>
                   <Link href="/wedding">
@@ -289,7 +289,7 @@ export default function Dance() {
                     priority
                   />
                   <div className="card-content">
-                    <p><strong>Wedding first dance</strong></p>
+                    <p>Wedding first dance</p>
                     <span>Let us make your first dance memorable.</span>
                   </div>
                   </Link>
@@ -304,7 +304,7 @@ export default function Dance() {
                       priority
                     />
                     <div className="card-content">
-                      <p><strong>Corporate and other Events</strong></p>
+                      <p>Corporate and other Events</p>
                       <span>Bar/Bat mitzvah, Charity Galas, Ballroom and many more!</span>
                     </div>
                   </Link>
@@ -319,7 +319,7 @@ export default function Dance() {
                       priority
                     />
                     <div className="card-content">
-                      <p><strong>Choreograph and instruct bands.</strong></p>
+                      <p>Choreograph and instruct bands.</p>
                       <span>Synchronize dance with live bands to elevate the moment to an unforgettable experience.</span>
                     </div>
                   </Link>
@@ -333,16 +333,18 @@ export default function Dance() {
         <div className="about" id="about">
           <div className="about__inner">
             <h2 className="heading">About</h2>
-            <p>Wendy Christensen began her dance career at age six with jazz, tap and ballet.  She went on to compete and place in the top three in several dance competitions both solo and with her high school dance team.  In college she was introduced to ballroom-dance and began competing in DanceSport competitions across the country.  In 2003 she and her partner took first place in Amateur Cabaret at the National Competition, making them National Champions.  Since moving to the DC area she has taken up salsa dance and continues to perform and compete at Salsa Congresses across the country.  Wendy holds a B.S in Exercise Science and is a certified exercise physiologist through the American College of Sports Medicine.  When she isn’t dancing you can find her teaching yoga, training clients or teaching couples their first dance for their wedding!</p>
-            <Image
-              src="/wendy.png"
-              alt="Fitness"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100%', height: '90%', objectFit: 'cover' }}
-              priority
-            />
+            <div className="about-split">
+              <Image
+                src="/wendy.jpeg"
+                alt="Fitness"
+                width={630}
+                height={620}
+                sizes='50vw'
+                style={{ objectFit: 'contain' }}
+                priority
+              />
+              <p>Wendy Christensen began her dance career at age six with jazz, tap and ballet.  She went on to compete and place in the top three in several dance competitions both solo and with her high school dance team.  In college she was introduced to ballroom-dance and began competing in DanceSport competitions across the country.  In 2003 she and her partner took first place in Amateur Cabaret at the National Competition, making them National Champions.  Since moving to the DC area she has taken up salsa dance and continues to perform and compete at Salsa Congresses across the country.  Wendy holds a B.S in Exercise Science and is a certified exercise physiologist through the American College of Sports Medicine.  When she isn’t dancing you can find her teaching yoga, training clients or teaching couples their first dance for their wedding!</p>
+            </div>
           </div>
         </div>
       </main>

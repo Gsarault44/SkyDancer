@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import { Urbanist } from 'next/font/google'
+import { Poppins } from 'next/font/google';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Link from 'next/link';
 
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
+const pop = Poppins({ weight: "200", subsets: ['latin'] });
 
 export default function Dance() {
 
@@ -68,8 +68,8 @@ export default function Dance() {
   return (
     <>
       <Head>
-        <title>SkyDancer Entertainment</title>
-        <meta name="description" content="SkyDancer Entertainment" />
+        <title>SkyDancer Entertainment&trade;</title>
+        <meta name="description" content="SkyDancer Entertainment&trade;" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -85,7 +85,7 @@ export default function Dance() {
           <meta
             key="og:title"
             name="og:title"
-            content="Skydancer Entertainment"
+            content="Skydancer Entertainment&trade;"
           />
           <meta
             key="og:description"
@@ -98,12 +98,12 @@ export default function Dance() {
             content="/dance.png"
           />
       </Head>
-      <main className={`${urbanist.className} wedding`}>
+      <main className={`${pop.className} wedding`}>
         <div className="dance-hero">
+          <video autoPlay muted loop>
+            <source src="/wedding-trimmed.mp4" />
+          </video>
           <h1>Elevate Your First Dance: Let Us Teach You the Magic!</h1>
-            <video autoPlay muted loop>
-              <source src="/wedding-trimmed.mp4" />
-            </video>
         </div>
         <div className="intro">
           <div className="intro__inner">
