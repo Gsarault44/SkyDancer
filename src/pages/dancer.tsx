@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, FormEvent } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
 import { Poppins } from 'next/font/google'
 import 'react-multi-carousel/lib/styles.css';
 import emailjs from '@emailjs/browser';
@@ -94,6 +95,7 @@ export const ContactUs = () => {
         />
         <input type="submit" value="Become a Dancer" />
       </form>
+      <h3>Or reach out: <Link href="mailto:wendy@skydancerentertainment.com">Wendy@skydancerentertainment.com</Link></h3>
     </>
   );
 };

@@ -119,4 +119,21 @@
       }
     }
   }
+  h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+
+    a {
+      color: lightblue;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
 }

@@ -161,6 +161,11 @@ export default function Dance() {
               />
             </div>
           </div>
+          <div className="wed-vid">
+            <video autoPlay muted loop>
+              <source src="/AudraWedding.mov" />
+            </video>
+          </div>
         </div>
       </main>
       <footer className="footer">

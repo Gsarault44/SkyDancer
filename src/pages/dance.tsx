@@ -275,7 +275,7 @@ export default function Dance() {
             <div className="what-we-do-content">
               <h2 className="heading">What We Do</h2>
               <video autoPlay muted loop style={{ width: '100%', objectFit: 'contain' }}>
-                <source src="/skydancer-promo2.mp4" />
+                <source src="/Skydancer-Promo.MP4" />
               </video>
               <h3>At Skydancer Entertainment&trade;, we&apos;re all about turning ordinary events into extraordinary experiences. Whether it&apos;s a special celebration, corporate gathering, Flash Mob, Ball Room, Jazz, or any occasion</h3>
               <ul>
