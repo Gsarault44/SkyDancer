@@ -2,6 +2,8 @@ import { useState, useEffect, useRef, FormEvent } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import { Poppins } from 'next/font/google';
 import 'react-multi-carousel/lib/styles.css';
 import emailjs from '@emailjs/browser';
@@ -139,6 +141,22 @@ export default function Dance() {
     };
   }, []);
 
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      partialVisibilityGutter: 50,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <>
       <Head>
@@ -174,9 +192,28 @@ export default function Dance() {
       </Head>
       <main className={`${pop.className} booking`}>
         <div className="dance-hero">
-          <video autoPlay muted loop>
-            <source src="/gatsby-snippet.mov" />
-          </video>
+          <Carousel
+            responsive={responsive}
+            containerClass="carousel"
+            autoPlay={true}
+            autoPlaySpeed={5000}
+            transitionDuration={1500}
+            arrows={false}
+            infinite={true}
+          >
+            <video autoPlay muted loop>
+              <source src="/gatsby-snippet.mov" />
+            </video>
+            <video autoPlay muted loop>
+              <source src="/gatsby-snippet-2.mov" />
+            </video>
+            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'cover' }}>
+              <source src="/trimmed.mp4" />
+            </video>
+            <video autoPlay muted loop style={{ width: '100vw', height: '100vh', objectPosition: 'center' }}>
+              <source src="/4.mov" />
+            </video>
+          </Carousel>
           <h1>Book a Dancer</h1>
         </div>
         <div className="intro">

@@ -310,8 +310,18 @@
   background-color: #fff;
   color:#000;
   blockquote {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto 2rem;
+    display: block;
+    font-size: 18px;
+    cite {
+      display: block;
+      margin-top: 1rem;
+      font-size: 16px;
+    }
+    span {
+      font-size: 16px;
+    }
   }
 }
 

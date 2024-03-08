@@ -103,12 +103,17 @@ export default function Dance() {
           <video autoPlay muted loop>
             <source src="/wedding-trimmed.mp4" />
           </video>
-          <h1>Elevate Your First Dance: Let Us Teach You the Magic!</h1>
+          <h1>Elevate Your First Dance: <br/> Let Us Teach You the Magic!</h1>
         </div>
         <div className="intro">
           <div className="intro__inner">
             <div className="intro-title" ref={(el: never) => (textRefs.current[0] = el)}>
               <h3>We understand that your wedding day is a once-in-a-lifetime event, and your first dance as a married couple should be nothing short of magical. Our mission is to make that moment unforgettable. Our expert instructors specialize in crafting the perfect first dance for you and your partner. Whether you dream of a graceful waltz, a passionate tango, a lively swing, or a contemporary choreography that reflects your unique style, we&apos;ve got you covered. We take the stress out of learning to dance, ensuring that you step onto the dance floor with confidence and grace. Let us help you create a cherished memory that will last a lifetime – your first dance as newlyweds.</h3>
+            </div>
+            <div className="first-dance">
+              <video autoPlay muted loop>
+                <source src="/first-dance.mp4" />
+              </video>
             </div>
             <div className="intro-image">
               <Image

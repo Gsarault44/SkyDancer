@@ -71,7 +71,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Image
                   src="/logo.png"
                   alt="Skydance Entertainment"
-                  width={280}
+                  width={300}
                   height={100}
                   loading="lazy"
                 />
@@ -84,6 +84,9 @@ export default function App({ Component, pageProps }: AppProps) {
                 </Link>
                 <Link href="/dance/#about">
                   About
+                </Link>
+                <Link href="/dance/#testimonials">
+                  Testimonials
                 </Link>
                 <Link href="/booking">
                   Book a Dancer
