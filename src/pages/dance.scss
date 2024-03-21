@@ -304,6 +304,19 @@
   }
 }
 
+.testimonal {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  padding-bottom: 10px;
+  max-width: 90%;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .testimonials {
   text-align: center;
   padding: 3rem 0;

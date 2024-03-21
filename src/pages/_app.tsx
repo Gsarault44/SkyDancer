@@ -71,23 +71,23 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Image
                   src="/logo.png"
                   alt="Skydance Entertainment"
-                  width={300}
-                  height={100}
+                  width={450}
+                  height={200}
                   loading="lazy"
                 />
               </Link>
             </div>
             <div className="header-links">
               <div className="header-links-group">
-                <Link href="/">
+                <Link href="/dance">
                   Home
                 </Link>
                 <Link href="/dance/#about">
                   About
                 </Link>
-                <Link href="/dance/#testimonials">
+                {/* <Link href="/dance/#testimonials">
                   Testimonials
-                </Link>
+                </Link> */}
                 <Link href="/booking">
                   Book a Dancer
                 </Link>
@@ -103,16 +103,16 @@ export default function App({ Component, pageProps }: AppProps) {
                   <Image
                     src="/fitness.png"
                     alt="SkyDancer Fitness"
-                    width={120}
-                    height={60}
+                    width={150}
+                    height={70}
                   />
                 </Link>
                 <Link href="https://sky-dancer-yoga.vercel.app/" className="yoga">
                   <Image
                     src="/yoga-logo.png"
                     alt="SkyDancer Yoga"
-                    width={100}
-                    height={50}
+                    width={150}
+                    height={70}
                   />
                 </Link>
               </div>

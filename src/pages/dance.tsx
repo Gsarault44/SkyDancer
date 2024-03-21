@@ -123,15 +123,22 @@ export default function Dance() {
               priority
               loading="eager"
             />
+            <div>
             <Image
-              src="/2.jpg"
-              alt="Dance"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100vw', height: '100vh' }}
-              priority
-            />
+                src="/2.jpg"
+                alt="Dance"
+                width={0}
+                height={0}
+                sizes='100vw'
+                style={{ width: '100vw', height: '100vh' }}
+                priority
+              />
+              <blockquote className="testimonal">
+                “Wendy and Skydancer Entertainment is always our “First Call” - providing exceptional dancers for any occasion! Professional, versatile, creative showmanship every time. Skydancer is always a joy to work with!”
+                <cite>&mdash;Trio Caliente</cite>
+                <span>4 Time Wammie Award winning Latin Band</span>
+              </blockquote>
+            </div>
             <Image
               src="/3.jpg"
               alt="Ballet"
@@ -330,14 +337,14 @@ export default function Dance() {
             </div>
           </div>
         </div>
-        <div className="testimonials" id="testimonials">
+        {/* <div className="testimonials" id="testimonials">
           <h2 className="heading">Out Happy Customers</h2>
           <blockquote>
           “Wendy and Skydancer Entertainment is always our “First Call” - providing exceptional dancers for any occasion! Professional, versatile, creative showmanship every time. Skydancer is always a joy to work with!”
             <cite>&mdash;Trio Caliente</cite>
             <span>4 Time Wammie Award winning Latin Band</span>
           </blockquote>
-        </div>
+        </div> */}
         <div className="about" id="about">
           <div className="about__inner">
             <h2 className="heading">About</h2>
