@@ -121,6 +121,25 @@ export default function App({ Component, pageProps }: AppProps) {
           </div>}
         </header>
       <Component {...pageProps} />
+      <footer className="footer">
+        <div className="inner">
+          <p>Copyright &copy; {new Date().getFullYear()} SkydancerEntertainment - All Rights Reserved.</p>
+          <div className="social">
+              <a href="https://www.facebook.com/skydancerentertainment/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+              </a>
+              <a href="https://twitter.com/skydancerent">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 595.3 595.3" xmlSpace="preserve">
+                <g>
+                  <path d="M341.3,262.5L512,68.1h-40.5L323.3,236.9L204.9,68.1H68.3l179.1,255.2L68.3,527.1h40.5l156.5-178.2l125,178.2h136.6
+                    L341.3,262.5z M285.9,325.5l-18.2-25.4L123.3,98h62.2L302,261.2l18.1,25.4l151.5,212.1h-62.2L285.9,325.5z"/>
+                </g>
+                </svg>
+              </a>
+            </div>
+        </div>
+      </footer>
     </>
   )
 }

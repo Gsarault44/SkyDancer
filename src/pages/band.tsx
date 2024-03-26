@@ -137,11 +137,6 @@ export default function Dance() {
             </div>
           
       </main>
-      <footer className="footer">
-        <div className="inner">
-          <p>Copyright &copy; {new Date().getFullYear()} SkydancerEntertainment - All Rights Reserved.</p>
-        </div>
-      </footer>
     </>
   )
 }

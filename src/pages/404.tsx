@@ -22,11 +22,6 @@ export default function Dance() {
           <h1>Sorry you have danced into the wrong page</h1>
         </div>
       </main>
-      <footer className="footer">
-        <div className="inner">
-          <p>Copyright &copy; {new Date().getFullYear()} SkydancerEntertainment - All Rights Reserved.</p>
-        </div>
-      </footer>
     </>
   )
 }

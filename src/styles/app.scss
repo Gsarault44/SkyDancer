@@ -87,8 +87,29 @@ html * {
   padding: 3rem;
   background-color: #000;
   color: #fff;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+  }
   p {
     color: #fff;
+  }
+  svg {
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+    path: {
+      fill: #fff;
+    }
+    &:hover {
+      path {
+        fill: #ccc;
+      }
+    }
+  }
+  .social {
+    display: flex;
+    gap: 15px;
   }
 }
 
