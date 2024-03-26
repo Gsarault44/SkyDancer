@@ -27,6 +27,7 @@
 .dance-hero {
   position: relative;
   background-color: #000;
+  z-index: 999 !important;
 
   &:after {
     content: '';
@@ -42,7 +43,7 @@
 
   h1 {
     position: absolute;
-    bottom: 22%;
+    top: calc(100% + 5px);
     width: 100%;
     color: #fff;
     font-size: 54px;

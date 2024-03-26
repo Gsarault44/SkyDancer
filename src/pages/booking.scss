@@ -6,7 +6,7 @@
       font-size: 60px;
       max-width: 80%;
       left: 50%;
-      bottom: 5px;
+      top: calc(100% + 5px);
       line-height: 1;
       transform: translateX(-50%);
     }
