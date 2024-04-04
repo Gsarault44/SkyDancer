@@ -79,22 +79,22 @@ export default function App({ Component, pageProps }: AppProps) {
             </div>
             <div className="header-links">
               <div className="header-links-group">
-                <Link href="/dance">
+                <Link href="/dance" onClick={() => setMenuStatus(false)}>
                   Home
                 </Link>
-                <Link href="/dance/#about">
+                <Link href="/dance/#about" onClick={() => setMenuStatus(false)}>
                   About
                 </Link>
                 {/* <Link href="/dance/#testimonials">
                   Testimonials
                 </Link> */}
-                <Link href="/booking">
+                <Link href="/booking" onClick={() => setMenuStatus(false)}>
                   Book a Dancer
                 </Link>
-                <Link href="/dancer">
+                <Link href="/dancer" onClick={() => setMenuStatus(false)}>
                   Audition
                 </Link>
-                <Link href="/contact">
+                <Link href="/contact" onClick={() => setMenuStatus(false)}>
                   Contact
                 </Link>
               </div>
