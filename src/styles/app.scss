@@ -117,11 +117,9 @@ html * {
   padding: 0 1.5rem;
   width: 100%;
   z-index: 99999;
-  position: fixed;
   background-color: #000;
   @media all and (min-width: 575px) {
     padding: 0;
-    background-color: rgba(#000, 0.25);
   }
 
   .menu-button {
@@ -148,10 +146,6 @@ html * {
     z-index: 999;
     position: fixed;
     background-color: #000;
-    @media all and (min-width: 575px) {
-  
-      background-color: rgba(#000, 0.25);
-    }
   
     .menu-button {
       position: fixed;
