@@ -38,7 +38,7 @@ export default function Home() {
       </Head>
       <main className="home">
         <div className="splash-row">
-          <Link href='https://sky-dancer-fitness.vercel.app/' className='home__link'>
+          <Link href='https://www.skydancerfitness.com/' className='home__link'>
             <h1>Fitness</h1>
             <div className="inline-logo">
               <Image
@@ -83,7 +83,7 @@ export default function Home() {
               loading="eager"
             />
           </Link>
-          <Link href='https://sky-dancer-yoga.vercel.app/' className='home__link'>
+          <Link href='https://www.skydanceryoga.com/' className='home__link'>
             <h1>Yoga</h1>
             <div className="inline-logo">
               <Image
