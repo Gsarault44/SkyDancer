@@ -55,7 +55,7 @@ html * {
       border-bottom: 0;
       
       img {
-        mix-blend-mode: overlay;  
+        filter: grayscale(1) brightness(1.5);
       }
     }
     img {
@@ -69,10 +69,13 @@ html * {
   .yoga {
     border-bottom: 0;
     padding: 0;
+    img {
+      filter: grayscale(1) brightness(3.5);
+    }
     &:hover {
       border-bottom: 0;
       img {
-        mix-blend-mode: overlay;  
+        filter: grayscale(1) brightness(0.5);
       }
     }
   }
@@ -84,12 +87,17 @@ html * {
 }
 
 .footer {
-  padding: 3rem;
+  padding: 1rem;
   background-color: #000;
   color: #fff;
+  @media all and (min-width: 575px) {
+    padding: 3rem;
+  }
   .inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 24px;
   }
   p {
     color: #fff;
@@ -118,8 +126,10 @@ html * {
   width: 100%;
   z-index: 99999;
   background-color: #000;
+  position: fixed;
   @media all and (min-width: 575px) {
     padding: 0;
+    position: static;
   }
 
   .menu-button {

@@ -328,6 +328,9 @@
   margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .testimonials {
@@ -395,10 +398,11 @@
     }
 
     img {
-      object-position: top;
       margin: 0 auto 1rem;
       display: block;
+      object-position: -100px 0;
       @media all and (min-width: 768px) {
+        object-position: top;
         width: 45%;
       }
     }
