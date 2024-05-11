@@ -328,6 +328,7 @@
   margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
+  color: #fff;
   @media all and (max-width: 768px) {
     width: 100%;
   }
@@ -481,6 +482,9 @@
     max-width: 500px;
     max-height: 300px;
   }
+  h2, p {
+    color: #fff;
+  }
 
   .close {
     position: absolute;
@@ -490,7 +494,7 @@
     font-size: 44px;
     line-height: 1;
     cursor: pointer;
-    font-family: '__Nanum_Gothic_568c2b', '__Nanum_Gothic_Fallback_568c2b';
+    color: #fff;
   }
 }
 

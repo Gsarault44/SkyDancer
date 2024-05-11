@@ -54,7 +54,7 @@ export const ContactUs = () => {
 
   return (
     <>
-      {thanks && (
+      {!thanks && (
         <div className="modal-wrapper">
           <div className="catcher" onClick={closeModal}></div>
           <div className="modal-small">
