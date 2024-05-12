@@ -26,6 +26,33 @@
     }
   }
 }
+.testimonal-wrapper {
+  position: relative;
+}
+.react-multi-carousel-list.carousel-testimonal {
+  position: absolute;
+  transform: translateY(-100%);
+  min-height: 200px;
+  width: 100%;
+  z-index: 999999 !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.25) 30%, rgba(255,255,255,0.5) 50%);
+
+  ul {
+    min-height: 200px;
+    .react-multi-carousel-item {
+      justify-content: center;
+      align-items: end;
+      display: flex;
+    }
+    blockquote, cite, span {
+      color: #000;
+      font-size: 18px;
+      @media all and (min-width: 575px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
 
 .dance-hero {
   position: relative;
@@ -319,15 +346,13 @@
 
 .testimonal {
   text-align: center;
-  position: absolute;
   display: flex;
   flex-direction: column;
   bottom: 0;
   padding-bottom: 10px;
-  max-width: 90%;
+  max-width: 75%;
   margin: 0 auto;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
   color: #fff;
   @media all and (max-width: 768px) {
     width: 100%;

@@ -133,11 +133,6 @@ export default function Dance() {
                 style={{ width: '100vw', height: '100vh' }}
                 priority
               />
-              <blockquote className="testimonal">
-                “Wendy and Skydancer Entertainment is always our “First Call” - providing exceptional dancers for any occasion! Professional, versatile, creative showmanship every time. Skydancer is always a joy to work with!”
-                <cite>&mdash;Trio Caliente</cite>
-                <span>4 Time Wammie Award winning Latin Band</span>
-              </blockquote>
             </div>
             <Image
               src="/3.jpg"
@@ -206,6 +201,31 @@ export default function Dance() {
               priority
             />
             
+          </Carousel>
+        </div>
+        <div className='testimonal-wrapper'>
+          <Carousel
+            responsive={responsive}
+            containerClass="carousel-testimonal"
+            autoPlay={true}
+            autoPlaySpeed={8000}
+            transitionDuration={1500}
+            arrows={false}
+            infinite={true}
+          >
+            <blockquote className="testimonal">
+              “Wendy and Skydancer Entertainment is always our “First Call” - providing exceptional dancers for any occasion! Professional, versatile, creative showmanship every time. Skydancer is always a joy to work with!”
+              <cite>&mdash;Trio Caliente</cite>
+              <span>4 Time Wammie Award winning Latin Band</span>
+            </blockquote>
+            <blockquote className="testimonal">
+              “Wendy was fantastic to work with on our wedding first dance. Not only was she creative with her choreography for a dance that really wowed our guests, but she was also extremely patient with us helping us to nail it on the day of the wedding.”
+              <cite>—Audra C.</cite>
+            </blockquote>
+            <blockquote className="testimonal">
+              “Working with Skydancer Entertainment has given me the privilege to work as a performer and motivator to help families and their guests celebrate moments they will never forget.”
+              <cite>—Dancer, Jamie S.</cite>
+            </blockquote>
           </Carousel>
         </div>
         <div className="dance-split-media-content">
