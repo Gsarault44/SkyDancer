@@ -35,7 +35,7 @@
   min-height: 200px;
   width: 100%;
   z-index: 999999 !important;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.25) 30%, rgba(255,255,255,0.5) 50%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.25) 25%, rgba(255,255,255,0.5) 40%);
 
   ul {
     min-height: 200px;
@@ -350,7 +350,8 @@
   flex-direction: column;
   bottom: 0;
   padding-bottom: 10px;
-  max-width: 75%;
+  max-width: 860px;
+  padding: 0 1rem;
   margin: 0 auto;
   text-align: center;
   color: #fff;
