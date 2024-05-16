@@ -7,11 +7,11 @@
       font-weight: normal;
       font-size: 60px;
       max-width: 90%;
-      bottom: 0;
+      top: 103%;
       left: 50%;
       transform: translateX(-50%);
       text-shadow: 1px 1px 1px #000;
-      @media all and (max-width: 575px) { 
+      @media all and (max-width: 768px) { 
         bottom: 0;
         font-size: 32px;
       }
