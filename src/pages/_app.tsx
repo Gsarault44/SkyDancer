@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Skydancer Entertainment&trade;</title>
         <meta name="description" content="Sharing our passion for dance."/>
 
-        <meta property="og:url" content="https://sky-dancer.vercel.app/dance"/>
+        <meta property="og:url" content="https://sky-dancer.vercel.app/"/>
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Skydancer Entertainment&trade;"/>
         <meta property="og:description" content="Sharing our passion for dance."/>
@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta property="twitter:domain" content="sky-dancer.vercel.app"/>
-        <meta property="twitter:url" content="https://sky-dancer.vercel.app/dance"/>
+        <meta property="twitter:url" content="https://sky-dancer.vercel.app/"/>
         <meta name="twitter:title" content="Skydancer Entertainment&trade;"/>
         <meta name="twitter:description" content="Sharing our passion for dance."/>
         <meta name="twitter:image" content="/crowd-share.jpeg"/>
@@ -91,7 +91,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Link href="/booking" onClick={() => setMenuStatus(false)}>
                   Book a Dancer
                 </Link>
-                <Link href="/dancer" onClick={() => setMenuStatus(false)}>
+                <Link href="/" onClick={() => setMenuStatus(false)}>
                   Audition
                 </Link>
                 <Link href="/contact" onClick={() => setMenuStatus(false)}>
