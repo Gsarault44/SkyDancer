@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       </Head>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
-      {router.pathname != '/' && <div>
+        <div>
           <div className="menu-button">
             <Link href="/" className="logo">
               <Image
@@ -65,6 +65,8 @@ export default function App({ Component, pageProps }: AppProps) {
               height={30}
             />
           </div>
+        </div>
+          <div>
           <nav className={`${menuStatus ? 'nav-open' : 'nav-closed'}`}>
             <div className="head-logo">
               <Link href="/">
@@ -79,7 +81,7 @@ export default function App({ Component, pageProps }: AppProps) {
             </div>
             <div className="header-links">
               <div className="header-links-group">
-                <Link href="/dance" onClick={() => setMenuStatus(false)}>
+                <Link href="/" onClick={() => setMenuStatus(false)}>
                   Home
                 </Link>
                 <Link href="/dance/#about" onClick={() => setMenuStatus(false)}>
@@ -118,7 +120,7 @@ export default function App({ Component, pageProps }: AppProps) {
               </div>
             </div>
             </nav>
-          </div>}
+          </div>
         </header>
       <Component {...pageProps} />
       <footer className="footer">
