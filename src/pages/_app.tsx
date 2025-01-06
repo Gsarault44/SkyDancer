@@ -2,6 +2,7 @@ import * as React from 'react';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from "next/head";
+import Script from 'next/script';
 import '@styles/app.scss';
 import { Nanum_Gothic, Poppins } from 'next/font/google';
 import { useRouter } from 'next/router';
@@ -20,6 +21,7 @@ const pop = Poppins({ weight: "200", subsets: ['latin'] })
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [menuStatus, setMenuStatus] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   return (
     <>
       <style jsx global>{`
@@ -66,14 +68,14 @@ export default function App({ Component, pageProps }: AppProps) {
             />
           </div>
         </div>
-          <div>
+        <div>
           <nav className={`${menuStatus ? 'nav-open' : 'nav-closed'}`}>
             <div className="head-logo">
               <Link href="/">
                 <Image
                   src="/logo.png"
                   alt="Skydance Entertainment"
-                  width={450}
+                  width={475}
                   height={200}
                   loading="lazy"
                 />
@@ -84,7 +86,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Link href="/" onClick={() => setMenuStatus(false)}>
                   Home
                 </Link>
-                <Link href="/dance/#about" onClick={() => setMenuStatus(false)}>
+                <Link href="/#about" onClick={() => setMenuStatus(false)}>
                   About
                 </Link>
                 {/* <Link href="/dance/#testimonials">
@@ -119,9 +121,21 @@ export default function App({ Component, pageProps }: AppProps) {
                 </Link>
               </div>
             </div>
-            </nav>
-          </div>
-        </header>
+          </nav>
+        </div>
+      </header>
+      <div className={`${open ? 'pop-card open': 'pop-card'} `}>
+        <button className='pop-card-close' onClick={() => setOpen(false)}>X</button>
+        <Image
+          src="/pool-ocean.jpg"
+          alt="Over looking a pool"
+          width={376}
+          height={320}
+        />
+        <p>Escape the hustle and bustle of everyday life and embark on a transformative journey with our rejuvenating yoga retreats.</p>
+        <a className="wtrvl-checkout_button button" id="wetravel_button_widget" data-env="https://www.wetravel.com" data-version="v0.3" data-uid="1154190" data-uuid="83061662" href="https://www.wetravel.com/checkout_embed?uuid=83061662" target="_blank">Book Now</a> 
+        <Script src="https://cdn.wetravel.com/widgets/embed_checkout.js"></Script>
+      </div>
       <Component {...pageProps} />
       <footer className="footer">
         <div className="inner">
