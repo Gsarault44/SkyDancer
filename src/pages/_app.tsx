@@ -124,7 +124,7 @@ export default function App({ Component, pageProps }: AppProps) {
           </nav>
         </div>
       </header>
-      <div className={`${open ? 'pop-card open': 'pop-card'} `}>
+      {/* <div className={`${open ? 'pop-card open': 'pop-card'} `}>
         <button className='pop-card-close' onClick={() => setOpen(false)}>X</button>
         <Image
           src="/pool-ocean.jpg"
@@ -135,7 +135,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <p>Escape the hustle and bustle of everyday life and embark on a transformative journey with our rejuvenating yoga retreats.</p>
         <a className="wtrvl-checkout_button button" id="wetravel_button_widget" data-env="https://www.wetravel.com" data-version="v0.3" data-uid="1154190" data-uuid="83061662" href="https://www.wetravel.com/checkout_embed?uuid=83061662" target="_blank">Book Now</a> 
         <Script src="https://cdn.wetravel.com/widgets/embed_checkout.js"></Script>
-      </div>
+      </div> */}
       <Component {...pageProps} />
       <footer className="footer">
         <div className="inner">
