@@ -32,7 +32,11 @@ export const ContactUs = () => {
     const input1 = form.current[0] as HTMLInputElement
     const input2 = form.current[1] as HTMLInputElement 
     const input3 = form.current[2] as HTMLInputElement
+    const honeypot = document.querySelector('.hidden-field') as HTMLInputElement;
     if(input1.value.length > 0 && input2.value.length > 0 && input3.value.length > 0) {
+      if (honeypot?.value !== '') {
+        return false;
+    }
       setThanks(true);
       emailjs.sendForm('service_yz0e3ad', 'template_mlghmfv', form.current, 'SgPX_lb0_LriOGFYT')
         .then((result) => {
@@ -91,6 +95,8 @@ export const ContactUs = () => {
           name="message"
           onChange={() => {}}
         />
+        <input type="text" name="website" className="hidden-field" />
+
         <input type="submit" value="Submit" />
       </form>
     </>
