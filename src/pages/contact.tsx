@@ -36,7 +36,7 @@ export const ContactUs = () => {
     if(input1.value.length > 0 && input2.value.length > 0 && input3.value.length > 0) {
       if (honeypot?.value !== '') {
         return false;
-    }
+      }
       setThanks(true);
       emailjs.sendForm('service_yz0e3ad', 'template_mlghmfv', form.current, 'SgPX_lb0_LriOGFYT')
         .then((result) => {
